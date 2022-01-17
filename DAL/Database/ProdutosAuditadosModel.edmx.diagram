@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="508cabcaa6db433c83ebfed4a45fa1e7" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.Empresa" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.Produto" Width="2.25" PointX="4.375" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_Produtos_Empresa" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.COFINS" Width="1.5" PointX="10.25" PointY="5.75" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_00" Width="1.5" PointX="12.875" PointY="7.25" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_10" Width="1.5" PointX="27.75" PointY="5.125" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_20" Width="1.5" PointX="10.125" PointY="1.5" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_30" Width="1.5" PointX="17" PointY="4.875" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_40" Width="1.5" PointX="21.75" PointY="1.125" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_41" Width="1.5" PointX="14.875" PointY="3.25" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_50" Width="1.5" PointX="7.75" PointY="1.375" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_51" Width="1.5" PointX="19" PointY="1.75" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_60" Width="1.5" PointX="19.375" PointY="6.125" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_70" Width="1.5" PointX="12.5" PointY="1.25" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.ICMS_90" Width="1.5" PointX="24.75" PointY="0.5" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.IPI" Width="1.5" PointX="27.75" PointY="0.875" />
+        <EntityTypeShape EntityType="ProdutosAuditadosModel.PIS" Width="1.5" PointX="21.75" PointY="5.75" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_COFINS_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS00_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS10_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS20_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS30_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS40_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS41_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS50_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS51_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS60_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS70_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_ICMS90_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_IPI_Produto" />
+        <AssociationConnector Association="ProdutosAuditadosModel.FK_PIS_Produto" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

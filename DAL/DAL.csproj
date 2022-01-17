@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59B7DC0B-1A00-4367-97BA-D7206649ABF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\Acesso.cs">
+      <DependentUpon>AcessoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AcessoModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcessoModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AcessoModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcessoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AcessoModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcessoModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CEST.cs">
+      <DependentUpon>RegistrosEanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Classificacao.cs">
+      <DependentUpon>RegistrosEanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\COFINS.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Empresa.cs">
+      <DependentUpon>AcessoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\EmpresaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpresaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\EmpresaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpresaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\EmpresaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpresaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\IBPT.cs">
+      <DependentUpon>RegistrosEanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_00.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_10.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_20.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_30.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_40.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_41.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_50.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_51.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_60.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_70.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ICMS_90.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\IPI.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PIS.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Produto.cs">
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PRODUTOS.cs">
+      <DependentUpon>RegistrosEanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProdutosAuditadosModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProdutosAuditadosModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProdutosAuditadosModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProdutosAuditadosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProdutosAuditadosModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProdutosAuditadosModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProdutosDrogaria.cs">
+      <DependentUpon>RegistrosEanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\RegistrosEanModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrosEanModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\RegistrosEanModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrosEanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\RegistrosEanModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrosEanModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\TIPI.cs">
+      <DependentUpon>RegistrosEanModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnaliseDasTagsNoProdutoModel.cs" />
+    <Compile Include="Model\Blocos\Bloco0200.cs" />
+    <Compile Include="Model\Blocos\BlocoC100.cs" />
+    <Compile Include="Model\Blocos\BlocoC170.cs" />
+    <Compile Include="Model\Icms\Icms00Model.cs" />
+    <Compile Include="Model\Icms\Icms10Model.cs" />
+    <Compile Include="Model\Icms\Icms20Model.cs" />
+    <Compile Include="Model\Icms\Icms30Model.cs" />
+    <Compile Include="Model\Icms\Icms40Model.cs" />
+    <Compile Include="Model\Icms\Icms41Model.cs" />
+    <Compile Include="Model\Icms\Icms50Model.cs" />
+    <Compile Include="Model\Icms\Icms51Model.cs" />
+    <Compile Include="Model\Icms\Icms60Model.cs" />
+    <Compile Include="Model\Icms\Icms70Model.cs" />
+    <Compile Include="Model\Icms\Icms90Model.cs" />
+    <Compile Include="Model\LayoutXml\EmpresaModalidade.cs" />
+    <Compile Include="Model\LayoutXml\EmpresaModel.cs" />
+    <Compile Include="Model\LayoutXml\NotaConsolidada.cs" />
+    <Compile Include="Model\NotaFiscalModel.cs" />
+    <Compile Include="Model\ProdutosConfrontadosModel.cs" />
+    <Compile Include="Model\ProdutosExcelModel.cs" />
+    <Compile Include="Model\RelatoriodosProdutosModel.cs" />
+    <Compile Include="Model\ResultadoFinalMva.cs" />
+    <Compile Include="Model\Tipi\TabelaTipiModel.cs" />
+    <Compile Include="Model\LayoutXml\NotaAnalise.cs" />
+    <Compile Include="Persistence\AbstractRepository.cs" />
+    <Compile Include="Persistence\ConsultarProdutosDAL.cs" />
+    <Compile Include="Persistence\EmpresaRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Database\ProdutosAuditadosModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProdutosAuditadosModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Database\EmpresaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmpresaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Database\AcessoModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AcessoModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\AcessoModel.edmx.diagram">
+      <DependentUpon>AcessoModel.edmx</DependentUpon>
+    </None>
+    <None Include="Database\EmpresaModel.edmx.diagram">
+      <DependentUpon>EmpresaModel.edmx</DependentUpon>
+    </None>
+    <None Include="Database\ProdutosAuditadosModel.edmx.diagram">
+      <DependentUpon>ProdutosAuditadosModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Database\RegistrosEanModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RegistrosEanModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\RegistrosEanModel.edmx.diagram">
+      <DependentUpon>RegistrosEanModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Database\AcessoModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AcessoModel.edmx</DependentUpon>
+      <LastGenOutput>AcessoModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\AcessoModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AcessoModel.edmx</DependentUpon>
+      <LastGenOutput>AcessoModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\EmpresaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpresaModel.edmx</DependentUpon>
+      <LastGenOutput>EmpresaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\EmpresaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmpresaModel.edmx</DependentUpon>
+      <LastGenOutput>EmpresaModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\ProdutosAuditadosModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProdutosAuditadosModel.edmx</DependentUpon>
+      <LastGenOutput>ProdutosAuditadosModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\ProdutosAuditadosModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProdutosAuditadosModel.edmx</DependentUpon>
+      <LastGenOutput>ProdutosAuditadosModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\RegistrosEanModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RegistrosEanModel.edmx</DependentUpon>
+      <LastGenOutput>RegistrosEanModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\RegistrosEanModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RegistrosEanModel.edmx</DependentUpon>
+      <LastGenOutput>RegistrosEanModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

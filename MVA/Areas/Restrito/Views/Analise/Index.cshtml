@@ -1,0 +1,119 @@
+﻿@model MVA.Models.FileModelAnalise
+
+
+@{
+    ViewBag.Title = "Upload de Arquivos";
+}
+
+
+<style>
+
+    .submit-progress-bg {
+        background-color: #262626;
+        opacity: 1.8;
+    }
+
+    .submit-progress {
+        z-index: 9999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        top: 0;
+        /* The following rules are the
+     ones most likely to change */
+        width: 100%;
+        /* Set 'margin-left' to a negative number
+     that is 1/2 of 'width' */
+        margin-left: 0;
+        background-color: #262626;
+        opacity: 1.8;
+        color: white;
+        /*-webkit-border-radius: 0.4em;
+        -moz-border-radius: 0.4em;
+        border-radius: 0.4em;*/
+        box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+        -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+    }
+
+        .submit-progress i {
+            margin-right: 0.5em;
+        }
+
+    .lblTitle {
+        font-size: large;
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+
+<h2>Selecione o arquivo txt com as chaves ou as XMLS: </h2>
+
+<br />
+
+
+@using (@Html.BeginForm("UploadArquivosRepositorioAnalise", "Analise", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" id="formulario">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Files, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Files, "", new { @type = "file", @multiple = "multiple" })
+                @Html.ValidationMessageFor(model => model.Files, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+
+                <input type="submit"
+                       id="Enviar"
+                       name="Enviar"
+                       value="Enviar Arquivo(s)"
+                       class="btn btn-primary"
+                       onclick="return DisplayProgressMessage(this, 'Enviando Arquivo(s) ...');" />
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10 text-success">
+                @ViewBag.UploadStatus
+            </div>
+        </div>
+    </div>
+}
+
+
+<script>
+    function DisplayProgressMessage(controller, msg) {
+        setTimeout(function () {
+            $(".submit-progress").removeAttr("hidden");
+        }, 1);
+
+        return true;
+    }
+</script>
+
+<div class="submit-progress" hidden="hidden">
+    <div class="lblTitle">
+
+        <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+        <br />
+        <label>Aguarde, Enviando Arquivos(s) &nbsp; : ) </label>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">

@@ -1,0 +1,255 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe32200710524837000193550010002454381100027166" versao="4.00">
+      <ide>
+        <cUF>32</cUF>
+        <cNF>10002716</cNF>
+        <natOp>VENDA MEC.REC.TERC.S</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>245438</nNF>
+        <dhEmi>2020-07-01T08:19:00-03:00</dhEmi>
+        <dhSaiEnt>2020-07-01T08:19:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>3205002</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>6</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>12.1.025 | 3.0</verProc>
+      </ide>
+      <emit>
+        <CNPJ>10524837000193</CNPJ>
+        <xNome>LM - COMERCIO ATACADISTA DE MATERIAL DE CONSTRUCAO LTDA</xNome>
+        <xFant>LM COMERCIO</xFant>
+        <enderEmit>
+          <xLgr>RUA HOLDERCIM</xLgr>
+          <nro>165</nro>
+          <xCpl>LT03 QD.VI SL02</xCpl>
+          <xBairro>CIVIT II</xBairro>
+          <cMun>3205002</cMun>
+          <xMun>SERRA</xMun>
+          <UF>ES</UF>
+          <CEP>29168066</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>552734219000</fone>
+        </enderEmit>
+        <IE>082591709</IE>
+        <IEST>92030040</IEST>
+        <IM>3707628</IM>
+        <CNAE>4679699</CNAE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONSTRUCOES LTDA</xNome>
+        <enderDest>
+          <xLgr>RUA CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xCpl>A 660</xCpl>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2122012473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>nfe@acimel.com.br;expedicao@fatranlog.com.br;adm.fatranlog@g</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>BN0383G1</cProd>
+          <cEAN>7899453504813</cEAN>
+          <xProd>PL CER OXFORD GRIGIO 60X60 A - Lote F23</xProd>
+          <NCM>69072200</NCM>
+          <CEST>1003000</CEST>
+          <cBenef />
+          <CFOP>6403</CFOP>
+          <uCom>M2</uCom>
+          <qCom>225.0000</qCom>
+          <vUnCom>13.80000000</vUnCom>
+          <vProd>3105.00</vProd>
+          <cEANTrib>7899453504813</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>225.0000</qTrib>
+          <vUnTrib>13.80000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>3105.00</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>372.60</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>4750.65</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>482.52</vICMSST>
+              <vBCFCPST>4750.65</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>95.01</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>3105.00</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>51.23</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>3105.00</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>235.98</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>(FCP):  (FCPST): Base R$ 4750.65 Perc.(2%) Vlr. R$ 95.01</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>3105.00</vBC>
+          <vICMS>372.60</vICMS>
+          <vICMSDeson>0</vICMSDeson>
+          <vFCPUFDest>0</vFCPUFDest>
+          <vICMSUFDest>0</vICMSUFDest>
+          <vICMSUFRemet>0</vICMSUFRemet>
+          <vFCP>0</vFCP>
+          <vBCST>4750.65</vBCST>
+          <vST>482.52</vST>
+          <vFCPST>95.01</vFCPST>
+          <vFCPSTRet>0</vFCPSTRet>
+          <vProd>3105.00</vProd>
+          <vFrete>0</vFrete>
+          <vSeg>0</vSeg>
+          <vDesc>0</vDesc>
+          <vII>0</vII>
+          <vIPI>0</vIPI>
+          <vIPIDevol>0</vIPIDevol>
+          <vPIS>51.23</vPIS>
+          <vCOFINS>235.98</vCOFINS>
+          <vOutro>0</vOutro>
+          <vNF>3682.53</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>18485327000166</CNPJ>
+          <xNome>FATRANLOG TRANSPORTE E LOGISTICA EIRELI</xNome>
+          <IE>082968241</IE>
+          <xEnder>AV RAUL NASSAR,62 62 A 64, SALA: 101;</xEnder>
+          <xMun>CACHOEIRO DE IT</xMun>
+          <UF>ES</UF>
+        </transporta>
+        <vol>
+          <qVol>90</qVol>
+          <esp>CAIXAS</esp>
+          <marca>BIANCOGRES</marca>
+          <pesoL>3330.000</pesoL>
+          <pesoB>3374.550</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>1000245438</nFat>
+          <vOrig>3682.53</vOrig>
+          <vDesc>0</vDesc>
+          <vLiq>3682.53</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-07-29</dVenc>
+          <vDup>577.53</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2020-08-12</dVenc>
+          <vDup>1035.00</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2020-08-26</dVenc>
+          <vDup>1035.00</vDup>
+        </dup>
+        <dup>
+          <nDup>004</nDup>
+          <dVenc>2020-09-09</dVenc>
+          <vDup>1035.00</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <indPag>1</indPag>
+          <tPag>15</tPag>
+          <vPag>3682.53</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>(FCP):Adicional de aliquota - Fundo Estadual de Combate a Pobreza e as Desigualdades Sociais (FECP) - 95,01  (FCPST): Base R$ 4750.65 Perc.(2%) ICMS retido por Substituicao Tributaria - Protocolos nºs 26/2010 e 196/2009 alterado pelo 38/2013</infAdFisco>
+        <infCpl>PV: L90605 Codigo Cliente: 015966-01 MVA cobrado em 53% por meio dos Mandados de Seguranca: NR: 0060128-35.2010.8.19.0000 e NR: 0060127-50.2010.8.19.0000  Placa: ELW3A06</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>53113791000122</CNPJ>
+        <xContato>Rodrigo de Almeida Sartorio</xContato>
+        <email>resp_tecnico_dfe_protheus@totvs.com.br</email>
+        <fone>1128593904</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe32200710524837000193550010002454381100027166">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>yBrJOCIbpI3vM/P703+qLnd1D5s=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>Pjdj6CjRHOx33GcMNgBA6DS4XVZFJqd1TUANWrBbDIx15sx8pyNMAT3fGWRUh2YMQAujbWl2fBchXRZ6qvrOotDQnKcewRQo46KvwjjPFgxN7MBERnOiu3KVzn8wLavJuMUKdNYdeHOSexmPLqI3j4c7c4IH8AN+L69D+vTUzdLpZLyhX4EEz2koznc5i09fYr8y69Gg/hOfbzeep6RFWqGejm6FyK4jzyfzJ3VkqOQnLLszv5ux5ivZIlj9vJZSqvBYSK2ZOD49knhwMFFhGH50N9f84quyrthJC/V7lnR+rFgZEIWCV7M0B1b1llSrsrmdIuNuCmvqQRDbwQIEgw==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202006041529</verAplic>
+      <chNFe>32200710524837000193550010002454381100027166</chNFe>
+      <dhRecbto>2020-07-01T08:20:04-03:00</dhRecbto>
+      <nProt>332200034595714</nProt>
+      <digVal>yBrJOCIbpI3vM/P703+qLnd1D5s=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

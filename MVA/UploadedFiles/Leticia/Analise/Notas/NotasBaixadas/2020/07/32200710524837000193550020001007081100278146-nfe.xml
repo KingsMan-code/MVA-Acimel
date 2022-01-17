@@ -1,0 +1,507 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe32200710524837000193550020001007081100278146" versao="4.00">
+      <ide>
+        <cUF>32</cUF>
+        <cNF>10027814</cNF>
+        <natOp>VENDA MEC.REC.TERC.S</natOp>
+        <mod>55</mod>
+        <serie>2</serie>
+        <nNF>100708</nNF>
+        <dhEmi>2020-07-30T13:18:00-03:00</dhEmi>
+        <dhSaiEnt>2020-07-30T13:18:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>3205002</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>6</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>12.1.025 | 3.0</verProc>
+      </ide>
+      <emit>
+        <CNPJ>10524837000193</CNPJ>
+        <xNome>LM - COMERCIO ATACADISTA DE MATERIAL DE CONSTRUCAO LTDA</xNome>
+        <xFant>LM COMERCIO</xFant>
+        <enderEmit>
+          <xLgr>RUA HOLDERCIM</xLgr>
+          <nro>165</nro>
+          <xCpl>LT03 QD.VI SL02</xCpl>
+          <xBairro>CIVIT II</xBairro>
+          <cMun>3205002</cMun>
+          <xMun>SERRA</xMun>
+          <UF>ES</UF>
+          <CEP>29168066</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>552734219000</fone>
+        </enderEmit>
+        <IE>082591709</IE>
+        <IEST>92030040</IEST>
+        <IM>3707628</IM>
+        <CNAE>4679699</CNAE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONSTRUCOES LTDA</xNome>
+        <enderDest>
+          <xLgr>RUA CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xCpl>A 660</xCpl>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2122012473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>nfe@acimel.com.br;expedicao@fatranlog.com.br;adm.fatranlog@g</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>BF0453G1</cProd>
+          <cEAN>7899453510586</cEAN>
+          <xProd>PAVIMENT GRAY 83X83 A - Lote W 1</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <cBenef />
+          <CFOP>6403</CFOP>
+          <uCom>M2</uCom>
+          <qCom>302.4000</qCom>
+          <vUnCom>29.14001323</vUnCom>
+          <vProd>8811.94</vProd>
+          <cEANTrib>7899453510586</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>302.4000</qTrib>
+          <vUnTrib>29.14001323</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>8811.94</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>1057.43</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>13482.26</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1369.37</vICMSST>
+              <vBCFCPST>13482.26</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>269.65</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>8811.94</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>145.40</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>8811.94</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>669.71</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>(FCP):  (FCPST): Base R$ 13482.26 Perc.(2%) Vlr. R$ 269.65</infAdProd>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>C61482R1</cProd>
+          <cEAN>7896782524666</cEAN>
+          <xProd>ALAMO RUSTIC 26X106-RET A - Lote F35</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <cBenef />
+          <CFOP>6403</CFOP>
+          <uCom>M2</uCom>
+          <qCom>240.0000</qCom>
+          <vUnCom>27.97000000</vUnCom>
+          <vProd>6712.80</vProd>
+          <cEANTrib>7896782524666</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>240.0000</qTrib>
+          <vUnTrib>27.97000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>6712.80</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>805.54</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>10270.58</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1043.17</vICMSST>
+              <vBCFCPST>10270.58</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>205.41</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>6712.80</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>110.76</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>6712.80</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>510.17</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>(FCP):  (FCPST): Base R$ 10270.58 Perc.(2%) Vlr. R$ 205.41</infAdProd>
+      </det>
+      <det nItem="3">
+        <prod>
+          <cProd>C61484B1</cProd>
+          <cEAN>7896782524727</cEAN>
+          <xProd>TAUARI BEIGE 26X106-RET A - Lote F35</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <cBenef />
+          <CFOP>6403</CFOP>
+          <uCom>M2</uCom>
+          <qCom>240.0000</qCom>
+          <vUnCom>30.45000000</vUnCom>
+          <vProd>7308.00</vProd>
+          <cEANTrib>7896782524727</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>240.0000</qTrib>
+          <vUnTrib>30.45000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>7308.00</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>876.96</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>11181.24</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1135.67</vICMSST>
+              <vBCFCPST>11181.24</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>223.62</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>7308.00</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>120.58</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>7308.00</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>555.41</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>(FCP):  (FCPST): Base R$ 11181.24 Perc.(2%) Vlr. R$ 223.62</infAdProd>
+      </det>
+      <det nItem="4">
+        <prod>
+          <cProd>C61686E1</cProd>
+          <cEAN>7896782536195</cEAN>
+          <xProd>EBANO 26X106-RET A - Lote F35</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <cBenef />
+          <CFOP>6403</CFOP>
+          <uCom>M2</uCom>
+          <qCom>240.0000</qCom>
+          <vUnCom>31.08000000</vUnCom>
+          <vProd>7459.20</vProd>
+          <cEANTrib>7896782536195</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>240.0000</qTrib>
+          <vUnTrib>31.08000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>7459.20</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>895.10</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>11412.57</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1159.17</vICMSST>
+              <vBCFCPST>11412.57</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>228.25</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>7459.20</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>123.08</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>7459.20</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>566.90</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>(FCP):  (FCPST): Base R$ 11412.57 Perc.(2%) Vlr. R$ 228.25</infAdProd>
+      </det>
+      <det nItem="5">
+        <prod>
+          <cProd>BN0682A1</cProd>
+          <cEAN>7899453509870</cEAN>
+          <xProd>PL CER ATHENAS 60X60 A - Lote R12</xProd>
+          <NCM>69072200</NCM>
+          <CEST>1003000</CEST>
+          <cBenef />
+          <CFOP>6403</CFOP>
+          <uCom>M2</uCom>
+          <qCom>300.0000</qCom>
+          <vUnCom>12.98000000</vUnCom>
+          <vProd>3894.00</vProd>
+          <cEANTrib>7899453509870</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>300.0000</qTrib>
+          <vUnTrib>12.98000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>3894.00</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>467.28</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>5957.82</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>605.12</vICMSST>
+              <vBCFCPST>5957.82</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>119.16</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>3894.00</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>64.25</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>3894.00</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>295.94</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>(FCP):  (FCPST): Base R$ 5957.82 Perc.(2%) Vlr. R$ 119.16</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>34185.94</vBC>
+          <vICMS>4102.31</vICMS>
+          <vICMSDeson>0</vICMSDeson>
+          <vFCPUFDest>0</vFCPUFDest>
+          <vICMSUFDest>0</vICMSUFDest>
+          <vICMSUFRemet>0</vICMSUFRemet>
+          <vFCP>0</vFCP>
+          <vBCST>52304.47</vBCST>
+          <vST>5312.50</vST>
+          <vFCPST>1046.09</vFCPST>
+          <vFCPSTRet>0</vFCPSTRet>
+          <vProd>34185.94</vProd>
+          <vFrete>0</vFrete>
+          <vSeg>0</vSeg>
+          <vDesc>0</vDesc>
+          <vII>0</vII>
+          <vIPI>0</vIPI>
+          <vIPIDevol>0</vIPIDevol>
+          <vPIS>564.07</vPIS>
+          <vCOFINS>2598.13</vCOFINS>
+          <vOutro>0</vOutro>
+          <vNF>40544.53</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>18485327000166</CNPJ>
+          <xNome>FATRANLOG TRANSPORTE E LOGISTICA EIRELI</xNome>
+          <IE>082968241</IE>
+          <xEnder>AV RAUL NASSAR,62 62 A 64, SALA: 101;</xEnder>
+          <xMun>CACHOEIRO DE IT</xMun>
+          <UF>ES</UF>
+        </transporta>
+        <vol>
+          <qVol>624</qVol>
+          <esp>CAIXAS</esp>
+          <marca>INCESA</marca>
+          <pesoL>20865.600</pesoL>
+          <pesoB>21163.200</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>2000100708</nFat>
+          <vOrig>40544.53</vOrig>
+          <vDesc>0</vDesc>
+          <vLiq>40544.53</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-08-27</dVenc>
+          <vDup>6358.59</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2020-09-10</dVenc>
+          <vDup>11395.31</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2020-09-24</dVenc>
+          <vDup>11395.31</vDup>
+        </dup>
+        <dup>
+          <nDup>004</nDup>
+          <dVenc>2020-10-08</dVenc>
+          <vDup>11395.32</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <indPag>1</indPag>
+          <tPag>15</tPag>
+          <vPag>40544.53</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>(FCP):Adicional de aliquota - Fundo Estadual de Combate a Pobreza e as Desigualdades Sociais (FECP) - 1.046,09  (FCPST): Base R$ 52304.47 Perc.(2%) ICMS retido por Substituicao Tributaria - Protocolos nºs 26/2010 e 196/2009 alterado pelo 38/2013</infAdFisco>
+        <infCpl>PV: LC0635 Codigo Cliente: 015966-01 MVA cobrado em 53% por meio dos Mandados de Seguranca: NR: 0060128-35.2010.8.19.0000 e NR: 0060127-50.2010.8.19.0000  Placa: ISG9847</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>53113791000122</CNPJ>
+        <xContato>Rodrigo de Almeida Sartorio</xContato>
+        <email>resp_tecnico_dfe_protheus@totvs.com.br</email>
+        <fone>1128593904</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe32200710524837000193550020001007081100278146">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>R1DSuiO+hZPpYW3c0qj0CRXDq4g=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>r5kzSFAzJeKsDhumX70gzbmODCBFcKvyJfyM7MIqB97NUnBKXTR253fzyJFFQJy/+uH/psuE9Iwh4KMbsN8DdhT+GPsvDtAMCnMPJDqizCg752c7yrNq1yyPWsm6ANygG7H0YBZuEsMqReU6CyA3VQmOWV8gxqw31Lmr/HpPUhte3E8z6PgXm1rSzg8tLzQPR0GGGzzzpefNJXXj4hOnGwpjjFtAeb7lVYp0G9NTdtpWtU2BIFDtIILusvnxp+ZnccC9BkF2J3pbQmXi3EIIQo3nAU9y91lMqnn7pxwFIKKohPks/3BCnlXDAB9w0TxzsPPMXzIveyruUhORF/zOOw==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202006041529</verAplic>
+      <chNFe>32200710524837000193550020001007081100278146</chNFe>
+      <dhRecbto>2020-07-30T13:19:00-03:00</dhRecbto>
+      <nProt>332200041307307</nProt>
+      <digVal>R1DSuiO+hZPpYW3c0qj0CRXDq4g=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

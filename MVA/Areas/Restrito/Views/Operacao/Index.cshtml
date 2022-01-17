@@ -1,0 +1,126 @@
+﻿@model IEnumerable<DAL.Database.Empresa>
+
+@{
+    ViewBag.Title = "Selecione o tipo de Operação";
+}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+<style>
+
+    .submit-progress {
+        z-index: 9999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        top: 0;
+        /* The following rules are the
+     ones most likely to change */
+        width: 100%;
+        /* Set 'margin-left' to a negative number
+     that is 1/2 of 'width' */
+        margin-left: 0;
+        background-color: #262626;
+        opacity: 1.8;
+        color: white;
+        /*-webkit-border-radius: 0.4em;
+        -moz-border-radius: 0.4em;
+        border-radius: 0.4em;*/
+        box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+        -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+    }
+
+        .submit-progress i {
+            margin-right: 0.5em;
+        }
+
+    .lblTitle {
+        font-size: large;
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .novaLinha {
+        display: inline-block;
+    }
+    }
+</style>
+
+<h2>Selecione o Tipo de Operação: </h2>
+
+<br />
+
+@using (@Html.BeginForm("Selecionar", "Operacao", FormMethod.Post))
+{
+    <div class="row">
+        <div class="form-group">
+            @Html.Label("Selecione a empresa que deseja analisar: ")
+            <div class="col-md-3">
+                @Html.DropDownList("Cnpj", null, new { id = "dropdownEmpresa" })
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <div class="form-inline">
+
+                <label class="container-radio">
+                    Análise de Produtos (MVA)
+                    <input type="radio" checked="checked" value="analise" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container-radio">
+                    Consolidar Entrada e Saída
+                    <input type="radio" name="radio" value="consolidar">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container-radio">
+                    Baixar Notas Fiscais
+                    <input type="radio" value="baixarNotas" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <input type="submit" id="submit" value="Analisar Empresa" class="btn btn-primary" onclick="return DisplayProgressMessage(this, 'Analisando...');" />
+        </div>
+    </div>
+}
+
+
+<script>
+    function DisplayProgressMessage(ctl, msg) {
+        setTimeout(function () {
+            $(".submit-progress").removeAttr("hidden");
+        }, 1);
+
+        return true;
+    }
+
+</script>
+
+<div class="submit-progress" hidden="hidden">
+    <div class="lblTitle">
+        <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+        <br />
+        <label>Aguarde, Carregando os módulos &nbsp; : ) </label>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+}
+
+<link href="~/Content/radiobutton.css" rel="stylesheet" />

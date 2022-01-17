@@ -1,0 +1,214 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe35200704201168000116550010002926251001373101">
+      <ide>
+        <cUF>35</cUF>
+        <cNF>00137310</cNF>
+        <natOp>REMESSA DOACAO, BONIF.OU BRINDE</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>292625</nNF>
+        <dhEmi>2020-07-20T15:36:40-03:00</dhEmi>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>3526902</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>1</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>Debcred versao 19</verProc>
+      </ide>
+      <emit>
+        <CNPJ>04201168000116</CNPJ>
+        <xNome>LUME CERAMICA LTDA</xNome>
+        <xFant>04201168000116 LUME</xFant>
+        <enderEmit>
+          <xLgr>RODOVIA DEPUTADO LAÉRCIO CORTE, SP 147 KM 121</xLgr>
+          <nro>0</nro>
+          <xBairro>BAIRRO GRAMINHA</xBairro>
+          <cMun>3526902</cMun>
+          <xMun>LIMEIRA</xMun>
+          <UF>SP</UF>
+          <CEP>13482904</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+        </enderEmit>
+        <IE>417225510116</IE>
+        <IEST>92010260</IEST>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONSTRUCOES LTDA</xNome>
+        <enderDest>
+          <xLgr>R CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xCpl>A 660</xCpl>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2122012473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>sebastiao@acimel.com.br;nfe@acimel.com.br;compras@acimel.com</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>LDL.EXPRESSO.P</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>PISO RET. PREMIUM EXPRESSO PLUS RELEVO ACETINADO 20X120 P</xProd>
+          <NCM>69072200</NCM>
+          <CEST>1003000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>6910</CFOP>
+          <uCom>PC</uCom>
+          <qCom>1.0000</qCom>
+          <vUnCom>6.2300000000</vUnCom>
+          <vProd>6.23</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>PC</uTrib>
+          <qTrib>1.0000</qTrib>
+          <vUnTrib>6.2300000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <vTotTrib>0</vTotTrib>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>6.23</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>0.75</vICMS>
+              <modBCST>0</modBCST>
+              <pMVAST>68.3000</pMVAST>
+              <vBCST>10.49</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1.14</vICMSST>
+              <vBCFCPST>10.49</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>0.21</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>303</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISNT>
+              <CST>08</CST>
+            </PISNT>
+          </PIS>
+          <COFINS>
+            <COFINSNT>
+              <CST>08</CST>
+            </COFINSNT>
+          </COFINS>
+        </imposto>
+        <infAdProd>Base FCP ST = 10,49 / Percentual FCP ST = 2,00 / Valor FCP ST = 0,21</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>6.23</vBC>
+          <vICMS>0.75</vICMS>
+          <vICMSDeson>0</vICMSDeson>
+          <vFCPUFDest>0</vFCPUFDest>
+          <vICMSUFDest>0</vICMSUFDest>
+          <vICMSUFRemet>0</vICMSUFRemet>
+          <vFCP>0</vFCP>
+          <vBCST>10.49</vBCST>
+          <vST>1.14</vST>
+          <vFCPST>0.21</vFCPST>
+          <vFCPSTRet>0</vFCPSTRet>
+          <vProd>6.23</vProd>
+          <vFrete>0</vFrete>
+          <vSeg>0</vSeg>
+          <vDesc>0</vDesc>
+          <vII>0</vII>
+          <vIPI>0</vIPI>
+          <vIPIDevol>0</vIPIDevol>
+          <vPIS>0</vPIS>
+          <vCOFINS>0</vCOFINS>
+          <vOutro>0</vOutro>
+          <vNF>7.58</vNF>
+          <vTotTrib>0</vTotTrib>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>20918339000189</CNPJ>
+          <xNome>VILELA &amp; BARBOSA TRANSPORTES LTDA - ME</xNome>
+          <IE>615017025118</IE>
+          <xEnder>R SEBASTIAO DENARDI , 505 - SEBASTIAO DENARDI PARQUE DOS J</xEnder>
+          <xMun>SANTA GERTRUDES</xMun>
+          <UF>SP</UF>
+        </transporta>
+        <vol>
+          <qVol>1</qVol>
+          <esp>CAIXAS</esp>
+          <marca>LDL</marca>
+          <pesoL>3.820</pesoL>
+          <pesoB>4.000</pesoB>
+        </vol>
+      </transp>
+      <pag>
+        <detPag>
+          <tPag>90</tPag>
+          <vPag>0</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>Total do FCP ST = 0,21</infAdFisco>
+        <infCpl>Portaria No.195/2019 art.2o.B, Inciso XICMS ST:              0,00 FECP =              0,00valor do fcp-ST=              0,21% do fcp-ST=             2,00% Outras Placas: EWU6623</infCpl>
+        <obsCont xCampo="DHEMB">
+          <xTexto>2020-07-20T15:36:44-03:00</xTexto>
+        </obsCont>
+      </infAdic>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe35200704201168000116550010002926251001373101">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>9XSeMDZIDD54ZPudr00DjdTdx4E=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>NaS66LkPlvpjOnko9+N3py+0fF5BM7ZpbB2iXm9iCiIe4c5B3C6YvCg8YXu/cKXfdeFr8YETpwKtezOZAONmV2VJrTFa2OcAcTycc0sjzzKiLdc1xaRvFiUYbG1lWEzAiHObRDqFb4kLOiUwiEVIZ+Q+5FrAO7BaGO4r2S6shqhxHyTTYvzPtKmhhVrTzPlsPkNDyiFr3C8Qzn6rSdfK213g2hr3DB3Sdvery7skGTAOFpNJeLDpWucVNUVRMxwJk5k/cuv/ouR07y00lHLUlgjDFyqwU5jcfmbUmxCzi7smiZSzOuK02WRYS1U3Tp+lG7P8TzMOw9U+PL30VjiJcA==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00">
+    <infProt Id="Id135200605880440">
+      <tpAmb>1</tpAmb>
+      <verAplic>SP_NFE_PL009_V4</verAplic>
+      <chNFe>35200704201168000116550010002926251001373101</chNFe>
+      <dhRecbto>2020-07-20T15:41:23-03:00</dhRecbto>
+      <nProt>135200605880440</nProt>
+      <digVal>9XSeMDZIDD54ZPudr00DjdTdx4E=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

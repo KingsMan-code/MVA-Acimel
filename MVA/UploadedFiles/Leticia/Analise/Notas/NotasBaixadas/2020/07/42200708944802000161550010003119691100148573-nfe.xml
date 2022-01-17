@@ -1,0 +1,241 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe42200708944802000161550010003119691100148573" versao="4.00">
+      <ide>
+        <cUF>42</cUF>
+        <cNF>10014857</cNF>
+        <natOp>VENDA DE PROD DO EST</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>311969</nNF>
+        <dhEmi>2020-07-20T13:49:00-03:00</dhEmi>
+        <dhSaiEnt>2020-07-20T13:49:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>4204608</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>3</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>12.1.025 | 3.0</verProc>
+      </ide>
+      <emit>
+        <CNPJ>08944802000161</CNPJ>
+        <xNome>CERAMICA ELIZABETH SUL LTDA</xNome>
+        <xFant>ELIZABETH SUL</xFant>
+        <enderEmit>
+          <xLgr>RODOVIA LUIZ ROSSO KM 7</xLgr>
+          <nro>8480</nro>
+          <xBairro>DAGOSTIM</xBairro>
+          <cMun>4204608</cMun>
+          <xMun>CRICIUMA</xMun>
+          <UF>SC</UF>
+          <CEP>88812000</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>4834612700</fone>
+        </enderEmit>
+        <IE>255438036</IE>
+        <IM>1028073</IM>
+        <CNAE>2342701</CNAE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONST</xNome>
+        <enderDest>
+          <xLgr>R CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2122012473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>compras@acimel.com.br;rafaelbet1@hotmail.com</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>01040009002588</cProd>
+          <cEAN>7899060660377</cEAN>
+          <xProd>PURE WHITE 84 X 84 HD POLIDO</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <CFOP>6101</CFOP>
+          <uCom>M2</uCom>
+          <qCom>203.0400</qCom>
+          <vUnCom>35.57752167</vUnCom>
+          <vProd>7223.66</vProd>
+          <cEANTrib>7899060660377</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>203.0400</qTrib>
+          <vUnTrib>35.57752167</vUnTrib>
+          <indTot>1</indTot>
+          <xPed>p03663</xPed>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>7223.66</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>866.84</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>7223.66</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>119.19</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>7223.66</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>549.00</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>TP:A Ton:777 Bit:5</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>7223.66</vBC>
+          <vICMS>866.84</vICMS>
+          <vICMSDeson>0</vICMSDeson>
+          <vFCPUFDest>0</vFCPUFDest>
+          <vICMSUFDest>0</vICMSUFDest>
+          <vICMSUFRemet>0</vICMSUFRemet>
+          <vFCP>0</vFCP>
+          <vBCST>0</vBCST>
+          <vST>0</vST>
+          <vFCPST>0</vFCPST>
+          <vFCPSTRet>0</vFCPSTRet>
+          <vProd>7223.66</vProd>
+          <vFrete>0</vFrete>
+          <vSeg>0</vSeg>
+          <vDesc>0</vDesc>
+          <vII>0</vII>
+          <vIPI>0</vIPI>
+          <vIPIDevol>0</vIPIDevol>
+          <vPIS>119.19</vPIS>
+          <vCOFINS>549.00</vCOFINS>
+          <vOutro>0</vOutro>
+          <vNF>7223.66</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>14168518000143</CNPJ>
+          <xNome>CRISTIANO DA SILVA BITENCOURT-ME</xNome>
+          <IE>256498423</IE>
+          <xEnder>R ARMANDO MACHADO</xEnder>
+          <xMun>JAGUARUNA</xMun>
+          <UF>SC</UF>
+        </transporta>
+        <vol>
+          <qVol>144</qVol>
+          <esp>CX</esp>
+          <pesoL>4535.914</pesoL>
+          <pesoB>4535.914</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>1000311969</nFat>
+          <vOrig>7223.66</vOrig>
+          <vDesc>0</vDesc>
+          <vLiq>7223.66</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-10-03</dVenc>
+          <vDup>2407.89</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2020-10-18</dVenc>
+          <vDup>2407.89</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2020-11-02</dVenc>
+          <vDup>2407.88</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <indPag>1</indPag>
+          <tPag>15</tPag>
+          <vPag>7223.66</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>Aliquota do ICMS conf art 26 inciso III alinea J. Suspenso de IPI conf art84 Dec 7212/10 - RIPI. ( TOTAL DE PALETES: 4 )</infAdFisco>
+        <infCpl>LOCAL DE ENTREGA:  Endereco: R CACHAMBI, 654, Bairro: CACHAMBI , Cidade: RIO DE JANEIRO , Uf: RJ ,Cep: 20771632  ACOMPANHE SEUS TITULOS: http://cliente.elizabethweb.com.br SENHA: 15998  Pedido Venda: 136061      Carga: 186781      Pedido Compra: p03663  Placa: MMB0125</infCpl>
+      </infAdic>
+      <compra>
+        <xPed>p03663</xPed>
+      </compra>
+      <infRespTec>
+        <CNPJ>53113791000122</CNPJ>
+        <xContato>Rodrigo de Almeida Sartorio</xContato>
+        <email>resp_tecnico_dfe_protheus@totvs.com.br</email>
+        <fone>1128593904</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe42200708944802000161550010003119691100148573">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>sDYJFgMoa2ARFRVeB1A5hxdRIPg=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>ljCdYz90pSNRKytC25x+9kM1TFRm4Gr0oy3z7/OQX/EeYa00qgV4Gqq2Jm86bxQjZLeN3HfsSZmevkD3DR2keuD7AqL7fOpKB3JVJlv3YvY+zu7oBKrXKYtfD3GU+lXIOE7/tXR8lbCoXM0RuFyJrADgR2ty4C+LonhzfiYTmGDyIB6CCWTpGWGlPA+QzBST9L/6sDydt0SRptkBkJ+1dwUApIvZ6sVK4iZm7bmPzgPEvGjQ6hsPCQqrxUS5xJrBtSeuTEwu4/5ln1K8ye/l+ry5eLm67eP39EpQhBqB/1Yao23QEYcO/s2nURwCU7pZL1njS2DddHzPQ0QpBbZkmw==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>MIIH4TCCBcmgAwIBAgIIelEgATFnczwwDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMTQwMgYDVQQLEytBdXRvcmlkYWRlIENlcnRpZmljYWRvcmEgUmFpeiBCcmFzaWxlaXJhIHYyMRIwEAYDVQQLEwlBQyBTT0xVVEkxGzAZBgNVBAMTEkFDIFNPTFVUSSBNdWx0aXBsYTAeFw0yMDAyMDcxMTAxMDFaFw0yMTAyMDQxMTE3MDBaMIHzMQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE0MDIGA1UECxMrQXV0b3JpZGFkZSBDZXJ0aWZpY2Fkb3JhIFJhaXogQnJhc2lsZWlyYSB2MjESMBAGA1UECxMJQUMgU09MVVRJMRswGQYDVQQLExJBQyBTT0xVVEkgTXVsdGlwbGExFzAVBgNVBAsTDjI5MDU2NzQxMDAwMTc2MRowGAYDVQQLExFDZXJ0aWZpY2FkbyBQSiBBMTEzMDEGA1UEAxMqQ0VSQU1JQ0EgRUxJWkFCRVRIIFNVTCBMVERBOjA4OTQ0ODAyMDAwMTYxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnbIn59HblNntMOj9FhhEw/y9HF3pW6DYt6RwzI5G4eQRKYz8tGFPzrJsw9fD9Ow+ovVua3fRtSz5xLwRpVwVSjYn6dAdaBgPiGQgw16+XJ3AkC5DULf3Ut1JFwHFXbVGdzhdZ6qzig/f95u5kVSF6rKYYtnL8BMbMBQdErjDCklIEAujQ5Z6EkuDywiXJCUtrAQ7J4oGFvCBP1UPNrM1AOUQ5XrLuA9kV/0qc8FEUsN66YneAm97er2X+o1sHiQRpT4XND9jJJLJAONUACu2t4hJGmP7QWgwcI7S4eiFHo0Q8HZJyvhUt7Qv5IVQ1IADViNJq3stfW7gcwivi5kAhQIDAQABo4IC3zCCAtswVAYIKwYBBQUHAQEESDBGMEQGCCsGAQUFBzAChjhodHRwOi8vY2NkLmFjc29sdXRpLmNvbS5ici9sY3IvYWMtc29sdXRpLW11bHRpcGxhLXYxLnA3YjAdBgNVHQ4EFgQUpWBkP5er/iDORO809W/N21l1NOMwCQYDVR0TBAIwADAfBgNVHSMEGDAWgBQ1rjEU9l7Sek9Y/jSoGmeXCsSbBzBeBgNVHSAEVzBVMFMGBmBMAQIBJjBJMEcGCCsGAQUFBwIBFjtodHRwczovL2NjZC5hY3NvbHV0aS5jb20uYnIvZG9jcy9kcGMtYWMtc29sdXRpLW11bHRpcGxhLnBkZjCB3gYDVR0fBIHWMIHTMD6gPKA6hjhodHRwOi8vY2NkLmFjc29sdXRpLmNvbS5ici9sY3IvYWMtc29sdXRpLW11bHRpcGxhLXYxLmNybDA/oD2gO4Y5aHR0cDovL2NjZDIuYWNzb2x1dGkuY29tLmJyL2xjci9hYy1zb2x1dGktbXVsdGlwbGEtdjEuY3JsMFCgTqBMhkpodHRwOi8vcmVwb3NpdG9yaW8uaWNwYnJhc2lsLmdvdi5ici9sY3IvQUNTT0xVVEkvYWMtc29sdXRpLW11bHRpcGxhLXYxLmNybDAOBgNVHQ8BAf8EBAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIHHBgNVHREEgb8wgbyBJWpvbmF0YW4ucGVyZWlyYUBncnVwb2VsaXphYmV0aC5jb20uYnKgJQYFYEwBAwKgHBMaSk9TRSBOSUxTT04gQ1JJU1BJTSBKVU5JT1KgGQYFYEwBAwOgEBMOMDg5NDQ4MDIwMDAxNjGgOAYFYEwBAwSgLxMtMTUxMDE5Njc1MjY5MjA1MTQ5MTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDANBgkqhkiG9w0BAQsFAAOCAgEAPFJ+l4wQdQp5mzl8F57pf9CEMOguneLOVRovh68eLDS0fWIwz4GYbXpKbmDWVHjtM2AuMdqdT2r48pag+FMTzk31HFu6iNx4aaw8vTtrYx0cp6CdU3qHBfG+CUNc45Nz8hnVQBBE6FiSSHimUQE/LMFcdk/O/1MOK+mslWS57VswX0+PKGo0To+bfISpOZKOk6XYJERvhdvEPJleSxy3vUlRNNBUFnYGnBKs7x4P4J+FCMMaS40monqFJp2DBnuld5W7+Lvta5U8NZGqNyH3IBMjvLQ6o1Jqmnxd8wnU657Hq7UqzRQcqlXMjN775BWyu+/j3N85O84/v2pP7wR10uEwexskJCb/AOQ7wEzKTmUM3TTJ3947xvM7sp0rVKPxOabupdHkrwtqCL+jDZcXHRbS4RCLU+i01lDfkHrFMKe1gn2ayVQuJB8zfz23PRDp6BTdihmAfN7HNEcLFgJ67Afa8K3FcBniBIPB/ctEwljNrADEv1l2CdtEKhqf8QRkRTkTv4/TknYKZgSi+05T+rmtIuSrHd02IjyfcjJoZq1KbNbhFRM0ddWEm5Mte0L4B1/QD6S+0MnkrwKMvSQUkMcN4V454iiQUglt+AslX1XAICcVxz5P8kNDC2I9xQUzEaQrU56tp/vyhmDoHkyUWAWVrJJ/IGvKv8EbmINQtpo=</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202006041529</verAplic>
+      <chNFe>42200708944802000161550010003119691100148573</chNFe>
+      <dhRecbto>2020-07-20T13:50:27-03:00</dhRecbto>
+      <nProt>342200108044306</nProt>
+      <digVal>sDYJFgMoa2ARFRVeB1A5hxdRIPg=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

@@ -1,0 +1,255 @@
+﻿@model IEnumerable<DAL.Model.NotaAnalise>
+
+@{
+    ViewBag.Title = "Detalhes das Notas";
+}
+
+<style>
+
+    .th-produto {
+        background-color: rgba(255, 114, 13, 0.70);
+        color: #2e2e2e;
+        font: 500;
+    }
+
+    .th-resultado {
+        background-color: #4ab0fc;
+        color: #2e2e2e;
+        font: 500;
+    }
+
+    #btn-top-exportar {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    table tr th {
+        border-right: 1px solid #464545;
+        color: black
+    }
+
+        table tr th :last-of-type {
+            border: none;
+        }
+
+    table tr td {
+        border-right: 1px solid #464545;
+        color: black
+    }
+
+        table tr td :last-of-type {
+            border: none;
+        }
+
+</style>
+
+<h2>Detalhes das Notas</h2>
+
+<div id="btn-top-exportar" class="panel-heading">
+    <a href="@Url.Action("SolicitarRelatorioDeAnalise")" class="btn btn-primary">Exportar Planilha</a>
+</div>
+
+<div style="padding-top: 10px; padding-bottom: 10px;">
+    <h4>Quantidade de Produtos: @Model.ToList().Count</h4>
+</div>
+
+<table class="table" style="font-size: 12px;">
+    <tr>
+        <th class="th-produto">
+            CHAVE
+        </th>
+        <th class="th-produto">
+            NÚMERO
+        </th>
+        <th class="th-produto">
+            FORNECEDOR / CLIENTE
+        </th>
+        <th class="th-produto">
+            CNPJ
+        </th>
+        <th class="th-produto">
+            CÓDIGO DO PRODUTO
+        </th>
+        <th class="th-produto">
+            DESCRIÇÃO DO PRODUTO / SERVIÇO
+        </th>
+        <th class="th-produto">
+            EAN/GTIN
+        </th>
+        <th class="th-produto">
+            NCM/SH
+        </th>
+        <th class="th-produto">
+            O/CST
+        </th>
+        <th class="th-produto">
+            CFOP
+        </th>
+        <th class="th-produto">
+            UN
+        </th>
+        <th class="th-produto">
+            QUANT VALOR
+        </th>
+        <th class="th-produto">
+            VALOR UNIT
+        </th>
+        <th class="th-produto">
+            VALOR DOS PRODUTOS
+        </th>
+        <!-- ICMS  -->
+        <th class="th-produto">
+            B.CÁLC ICMS
+        </th>
+        <th class="th-produto">
+            VALOR ICMS
+        </th>
+        <th class="th-produto">
+            VALOR IPI
+        </th>
+        <th class="th-produto">
+            ALÍQ. ICMS
+        </th>
+        <th class="th-produto">
+            ALÍQ. IPI
+        </th>
+        <td class="th-produto">
+            ALÍQ. FUNDO DE COMBATE À POBREZA
+        </td>
+        <td class="th-produto">
+            ALÍQ. ICMSST
+        </td>
+        <th class="th-produto">
+            BASE DE CÁLC. ICMST S.T.
+        </th>
+        <th class="th-produto">
+            VALOR DO ICMS SUBST.
+        </th>
+        <th class="th-produto">
+            MVA NF-e
+        </th>
+        <th class="th-produto">
+            FRETE
+        </th>
+        <th class="th-produto">
+            SEGURO
+        </th>
+        <th class="th-produto">
+            DESCONTO
+        </th>
+        <th class="th-produto">
+            OUTRAS DESPESAS
+        </th>
+        <th class="th-produto">
+            VALOR TOTAL
+        </th>
+        <th class="th-resultado">
+            BASE ICMS ST (BENEFÍCIO)
+        </th>
+        <th class="th-resultado">
+            ICMS ST (BENEFÍCIO)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+
+    <td title="CHAVE">
+        @Html.DisplayFor(modelItem => item.cNF)
+    </td>
+    <td title="NÚMERO">
+        @Html.DisplayFor(modelItem => item.nNF)
+    </td>
+    <td title="CLIENTE">
+        @Html.DisplayFor(modelItem => item.Cliente)
+    </td>
+    <td title="CNPJ">
+        @Html.DisplayFor(modelItem => item.Cnpj)
+    </td>
+    <td title="CÓDIGO DO PRODUTO">
+        @Html.DisplayFor(modelItem => item.cProd)
+    </td>
+    <td title="DESCRIÇÃO DO PRODUTO / SERVIÇO">
+        @Html.DisplayFor(modelItem => item.xProd)
+    </td>
+    <td title="EAN/GTIN">
+        @Html.DisplayFor(modelItem => item.cEAN)
+    </td>
+    <td title="NCM/SH">
+        @Html.DisplayFor(modelItem => item.NCM)
+    </td>
+    <td title="CST">
+        @Html.DisplayFor(modelItem => item.CST)
+    </td>
+    <td title="CFOP">
+        @Html.DisplayFor(modelItem => item.CFOP)
+    </td>
+    <td title="UN">
+        @Html.DisplayFor(modelItem => item.uCom)
+    </td>
+    <td title="QUANT VALOR">
+        @Html.DisplayFor(modelItem => item.qCom)
+    </td>
+    <td title="VALOR UNIT">
+        @Html.DisplayFor(modelItem => item.vUnCom)
+    </td>
+    <td title="VALOR TOTAL">
+        @Html.DisplayFor(modelItem => item.vProd)
+    </td>
+    <td title="B.CÁLC ICMS">
+        @Html.DisplayFor(modelItem => item.ICMS_vBC)
+    </td>
+    <td title="VALOR ICMS">
+        @Html.DisplayFor(modelItem => item.ICMS_vICMS)
+    </td>
+    <td title="VALOR IPI">
+        @Html.DisplayFor(modelItem => item.IPI_vIPI)
+    </td>
+    <td title="ALÍQ. ICMS">
+        @Html.DisplayFor(modelItem => item.ICMS_pICMS)
+    </td>
+    <td title="ALÍQ. IPI">
+        @Html.DisplayFor(modelItem => item.IPI_pIPI)
+    </td>
+    <td title="ALÌQ. FUNDO DE COMBATE À POBREZA">
+        @Html.DisplayFor(modelItem => item.pFCP)
+    </td>
+    <td title="ALÍQ. ICMSST">
+        @Html.DisplayFor(modelItem => item.pICMSST)
+    </td>
+    <td title="BASE DE CÁLC. ICMST S.T.">
+        @Html.DisplayFor(modelItem => item.ICMS_vBCST)
+    </td>
+    <td title="VALOR DO ICMS SUBST.">
+        @Html.DisplayFor(modelItem => item.ICMS_vICMSST)
+    </td>
+    <td title="RESULTADO MVA">
+        @Html.DisplayFor(modelItem => item.Mva_Nfe)
+    </td>
+    <td title="FRETE">
+        @Html.DisplayFor(modelItem => item.Frete)
+    </td>
+    <td title="SEGURO">
+        @Html.DisplayFor(modelItem => item.Seguro)
+    </td>
+    <td title="DESCONTO">
+        @Html.DisplayFor(modelItem => item.Descontos)
+    </td>
+    <td title="OUTRAS DESPESAS">
+        @Html.DisplayFor(modelItem => item.OutrasDespesas)
+    </td>
+    <td title="VALOR TOTAL">
+        @Html.DisplayFor(modelItem => item.ValorTotal)
+    </td>
+    <td title="RESULTADO BASE ST">
+        @Html.DisplayFor(modelItem => item.BaseIcmsStBeneficio)
+    </td>
+    <td title="RESULTADO ICMS ST">
+        @Html.DisplayFor(modelItem => item.IcmsStBeneficio)
+    </td>
+</tr>
+    }
+
+</table>
+

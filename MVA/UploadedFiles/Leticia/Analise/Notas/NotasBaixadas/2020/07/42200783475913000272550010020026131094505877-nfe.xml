@@ -1,0 +1,320 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe Id="NFe42200783475913000272550010020026131094505877" versao="4.00">
+      <ide>
+        <cUF>42</cUF>
+        <cNF>09450587</cNF>
+        <natOp>Venda de producao do estabelecimento ST</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>2002613</nNF>
+        <dhEmi>2020-07-08T13:16:57-02:00</dhEmi>
+        <dhSaiEnt>2020-07-08T13:16:57-02:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>4218004</cMunFG>
+        <tpImp>2</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>7</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>NDDigital NFe 4.8.3</verProc>
+      </ide>
+      <emit>
+        <CNPJ>83475913000272</CNPJ>
+        <xNome>PBG S/A</xNome>
+        <enderEmit>
+          <xLgr>Rodovia BR 101</xLgr>
+          <nro>KM 163</nro>
+          <xCpl>Cx. Postal 15</xCpl>
+          <xBairro>Centro</xBairro>
+          <cMun>4218004</cMun>
+          <xMun>Tijucas</xMun>
+          <UF>SC</UF>
+          <CEP>88200000</CEP>
+          <cPais>1058</cPais>
+          <xPais>Brasil</xPais>
+          <fone>4832792222</fone>
+        </enderEmit>
+        <IE>250560550</IE>
+        <IEST>92005151</IEST>
+        <IM>3014703</IM>
+        <CNAE>2342701</CNAE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONSTRUCOES LTDA</xNome>
+        <enderDest>
+          <xLgr>Rua Cachambi</xLgr>
+          <nro>654</nro>
+          <xCpl>A 660</xCpl>
+          <xBairro>Cachambi</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>Brasil</xPais>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>29153C 000001</cProd>
+          <cEAN>7892226012096</cEAN>
+          <xProd>HIT FENDI 80X80 NAT RET    .QTD EMB 72</xProd>
+          <NCM>69072100</NCM>
+          <NVE>NV0001</NVE>
+          <CEST>1003000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>6401</CFOP>
+          <uCom>m2</uCom>
+          <qCom>137.5200</qCom>
+          <vUnCom>20.2400</vUnCom>
+          <vProd>2783.40</vProd>
+          <cEANTrib>7892226012096</cEANTrib>
+          <uTrib>m2</uTrib>
+          <qTrib>137.5200</qTrib>
+          <vUnTrib>20.2400</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>2783.40</vBC>
+              <pICMS>12.00</pICMS>
+              <vICMS>334.01</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.30</pMVAST>
+              <vBCST>4684.46</vBCST>
+              <pICMSST>18.00</pICMSST>
+              <vICMSST>509.19</vICMSST>
+              <vBCFCPST>4684.46</vBCFCPST>
+              <pFCPST>2.00</pFCPST>
+              <vFCPST>93.69</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>2783.40</vBC>
+              <pIPI>0.00</pIPI>
+              <vIPI>0.00</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>2449.39</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>40.41</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>2449.39</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>186.15</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>PISO - ICMS FCP por ST. Aliquota: 2%. BC: R$ 4684.46. Valor: R$ 93.69 -</infAdProd>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>29169C 000001</cProd>
+          <cEAN>7892226036108</cEAN>
+          <xProd>HIT GRIS 80X80 NAT RET    .QTD EMB 240</xProd>
+          <NCM>69072100</NCM>
+          <NVE>NV0001</NVE>
+          <CEST>1003000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>6401</CFOP>
+          <uCom>m2</uCom>
+          <qCom>458.4000</qCom>
+          <vUnCom>20.2400</vUnCom>
+          <vProd>9278.02</vProd>
+          <cEANTrib>7892226036108</cEANTrib>
+          <uTrib>m2</uTrib>
+          <qTrib>458.4000</qTrib>
+          <vUnTrib>20.2400</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>9278.02</vBC>
+              <pICMS>12.00</pICMS>
+              <vICMS>1113.36</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.30</pMVAST>
+              <vBCST>15614.91</vBCST>
+              <pICMSST>18.00</pICMSST>
+              <vICMSST>1697.32</vICMSST>
+              <vBCFCPST>15614.91</vBCFCPST>
+              <pFCPST>2.00</pFCPST>
+              <vFCPST>312.30</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPITrib>
+              <CST>99</CST>
+              <vBC>9278.02</vBC>
+              <pIPI>0.00</pIPI>
+              <vIPI>0.00</vIPI>
+            </IPITrib>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>8164.66</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>134.72</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>8164.66</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>620.51</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>PISO - ICMS FCP por ST. Aliquota: 2%. BC: R$ 15614.91. Valor: R$ 312.3 -</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>12061.42</vBC>
+          <vICMS>1447.37</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCPUFDest>0.00</vFCPUFDest>
+          <vICMSUFDest>0.00</vICMSUFDest>
+          <vICMSUFRemet>0.00</vICMSUFRemet>
+          <vFCP>0.00</vFCP>
+          <vBCST>20299.37</vBCST>
+          <vST>2206.51</vST>
+          <vFCPST>405.99</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>12061.42</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0</vIPIDevol>
+          <vPIS>175.13</vPIS>
+          <vCOFINS>806.66</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>14673.92</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <vol>
+          <qVol>312</qVol>
+          <esp>VOLUMES</esp>
+          <marca>PORTOBELLO</marca>
+          <pesoL>14208.521</pesoL>
+          <pesoB>14507.520</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>2002613</nFat>
+          <vOrig>14673.92</vOrig>
+          <vDesc>0.00</vDesc>
+          <vLiq>14673.92</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-08-27</dVenc>
+          <vDup>2934.78</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2020-09-06</dVenc>
+          <vDup>2934.78</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2020-09-16</dVenc>
+          <vDup>2934.78</vDup>
+        </dup>
+        <dup>
+          <nDup>004</nDup>
+          <dVenc>2020-09-26</dVenc>
+          <vDup>2934.78</vDup>
+        </dup>
+        <dup>
+          <nDup>005</nDup>
+          <dVenc>2020-10-06</dVenc>
+          <vDup>2934.80</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <indPag>1</indPag>
+          <tPag>99</tPag>
+          <vPag>14673.92</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>ICMS FCP Total recolhido por ST. Valor: R$ 405.99 -</infAdFisco>
+        <infCpl>PED: 3136114 - OC: - OBS. NF: Distribuicao: 336526663 - Percurso: 7689668 - Parada: 1 Fica reduzido a zero a al quota de IPI conforme DECRETO N 7.796 DE 30 DE AGOSTO DE 2012 Termo de Acordo: E-04 038167 2019. A T E N O !! A EMPRESA SOMENTE ACATARA DEVOLU ES MEDIANTE AUTORIZA O PR VIA DE NOSSO ESCRIT RIO REGIONAL DE VENDAS - PALETE : incluso no valor da mercadoria, sem retorno CX: 312 Caso nao tenha recebido o arquivo digital da Nota Fiscal Eletronica, favor entrar em contato atrav s do email nfe@portobello.com.br *** 2a VIA DE BOLETO - ACESSE BOLETOS.PORTOBELLO.COM.BR ***</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>06255692000103</CNPJ>
+        <xContato>Jackson Antonio Cenci</xContato>
+        <email>produtos.edocs@ndd.com.br</email>
+        <fone>554932518000</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe42200783475913000272550010020026131094505877">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>/1SwYbHQFxN8WhVO4E4ksDB7gaQ=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>UzmhZeon1BbSBOcmbgSXZXQRLor+9yS86RWOMAhOpc5aKHJXGh1V2wHZOVaRcxBlX7C0J2wOUr2EiSVYd8ProsulTN2XvuJZ2G2hV1tYzSjl5vvmm86ufdk5xtZa1n5aDFxqb9Yc4kPHhQLJUoyNE2HY9o95MGNXbZxF1Mm3fgzjN2rLVceN8JaApOJtTE3nrs5CyEl/a7aJ4Z68e+3AReaAeNKJNDSUn3eEJR63sQ0Ylxv+Ys1VmFk5jDxAkjSEXR4Cg7ta/rphkxQplCq3ZvN2Gx8QtuIf70apfEpWlXDifCnmegBiuMUb/pvnV+8mJnqSb8H/S1SBuLEYwj0vRA==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202006041529</verAplic>
+      <chNFe>42200783475913000272550010020026131094505877</chNFe>
+      <dhRecbto>2020-07-08T13:19:46-03:00</dhRecbto>
+      <nProt>342200101061871</nProt>
+      <digVal>/1SwYbHQFxN8WhVO4E4ksDB7gaQ=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

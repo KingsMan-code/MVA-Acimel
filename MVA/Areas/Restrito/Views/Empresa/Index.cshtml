@@ -1,0 +1,85 @@
+﻿@model IEnumerable<DAL.Database.Empresa>
+
+@{
+    ViewBag.Title = "Empresas Cadastradas";
+}
+
+<h2>Empresas Cadastradas</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar Nova", "Cadastrar")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Código da Empresa")
+        </th>
+        <th>
+            @Html.DisplayName("Razão Social")
+        </th>
+        <th>
+            @Html.DisplayName("CNPJ")
+        </th>
+        <th>
+            @Html.DisplayName("Alíquota")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmpresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RazaoSocial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cnpj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aliquota)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id = item.IdEmpresa }) |
+                @Html.ActionLink("Excluir", "Excluir", new { id = item.IdEmpresa })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".btn-link").click(function () {
+            var id = $(this).attr('data-item');
+            if (confirm("Você tem certeza que gostaria de excluir este registro?")) {
+                $.ajax({
+                    method: "POST",
+                    url: "/Empresa/Excluir/" + id,
+                    success: function (data) {
+                        $("#tblPessoas tbody > tr").remove();
+                        $.each(data, function (i, empresa) {
+                            $("#tblPessoas tbody").append(
+                                "<tr>" +
+                                "   <td>" + empresa.RazapSocial + "</td>" +
+                                "   <td>" + empresa.Cnpj + "</td>" +
+                                "   <td>" + empresa.Aliquita + "</td>" +
+                                "   <td>" +
+                                "       <a href='/Empresa/Editar/" + empresa.IdEmpresa + "'>Editar</a> |" +
+                                "       <button type=\"button\" class=\"btn btn-link\" data-item=\"" + empresa.IdEmpresa + "\">Excluir</button>" +
+                                "   </td>" +
+                                "</tr>"
+                            );
+                        });
+                    },
+                    error: function (data) {
+                        alert("Houve um erro na pesquisa.");
+                    }
+                });
+            }
+        });
+    });
+</script>

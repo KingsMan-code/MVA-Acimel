@@ -1,0 +1,372 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe35200747595863000465550010010053871869024655">
+      <ide>
+        <cUF>35</cUF>
+        <cNF>86902465</cNF>
+        <natOp>Venda Producao-Prod.Sujeito a</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>1005387</nNF>
+        <dhEmi>2020-07-30T00:00:00-03:00</dhEmi>
+        <dhSaiEnt>2020-07-30T00:00:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>3543907</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>5</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>4.0.0</verProc>
+      </ide>
+      <emit>
+        <CNPJ>47595863000465</CNPJ>
+        <xNome>DELTA INDUSTRIA CERAMICA LTDA.</xNome>
+        <xFant>DELTA FILIAL 4</xFant>
+        <enderEmit>
+          <xLgr>RODOVIA RIO CLARO - PIRACICABA, KM 7</xLgr>
+          <nro>000</nro>
+          <xBairro>DISTRITO DE ASSISTENCIA, C.P. 397</xBairro>
+          <cMun>3543907</cMun>
+          <xMun>RIO CLARO</xMun>
+          <UF>SP</UF>
+          <CEP>13509970</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>1935223700</fone>
+        </enderEmit>
+        <IE>587247569114</IE>
+        <IEST>92010236</IEST>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVEST E CONSTR LTDA</xNome>
+        <enderDest>
+          <xLgr>RUA CACHAMBI</xLgr>
+          <nro>654660</nro>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2122212473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>compras@acimel.com.br</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>1021-A</cProd>
+          <cEAN>7899510915606</cEAN>
+          <xProd>PORCELANATO RETIFICADO KEA POLIDO A 70X70 DELTA EVIDENCE ESMALTADO POLIDO</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>235.2000</qCom>
+          <vUnCom>31.9000000000</vUnCom>
+          <vProd>7502.88</vProd>
+          <cEANTrib>7899510915606</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>235.2000</qTrib>
+          <vUnTrib>31.9000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>7502.88</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>900.35</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.3000</pMVAST>
+              <vBCST>12627.35</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1372.57</vICMSST>
+              <vBCFCPST>12627.35</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>252.55</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>6602.53</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>108.94</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>6602.53</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>501.79</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>BC.FCP R$ 12.627,35 x FCP 2% = R$ 252,55 /</infAdProd>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>1361-A</cProd>
+          <cEAN>7899510922192</cEAN>
+          <xProd>PORCELANATO RETIFICADO MODENA TECA POLIDO A 70X70 DELTA EVIDENCE ESMALTADO POLIDO</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>235.2000</qCom>
+          <vUnCom>31.9000000000</vUnCom>
+          <vProd>7502.88</vProd>
+          <cEANTrib>7899510922192</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>235.2000</qTrib>
+          <vUnTrib>31.9000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>7502.88</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>900.35</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.3000</pMVAST>
+              <vBCST>12627.35</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1372.57</vICMSST>
+              <vBCFCPST>12627.35</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>252.55</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>6602.53</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>108.94</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>6602.53</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>501.79</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>BC.FCP R$ 12.627,35 x FCP 2% = R$ 252,55 /</infAdProd>
+      </det>
+      <det nItem="3">
+        <prod>
+          <cProd>1769-A</cProd>
+          <cEAN>7899510930340</cEAN>
+          <xProd>PISO GRES ESMALTADO POLIDO BOTTICCINO POLIDO A 70X70 DURAGRES GRESALATO</xProd>
+          <NCM>69072200</NCM>
+          <CEST>1003000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>235.2000</qCom>
+          <vUnCom>25.5000000000</vUnCom>
+          <vProd>5997.60</vProd>
+          <cEANTrib>7899510930340</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>235.2000</qTrib>
+          <vUnTrib>25.5000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>5997.60</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>719.71</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.3000</pMVAST>
+              <vBCST>10093.96</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>1097.20</vICMSST>
+              <vBCFCPST>10093.96</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>201.88</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>5277.89</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>87.09</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>5277.89</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>401.12</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>BC.FCP R$ 10.093,96 x FCP 2% = R$ 201,88 /</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>21003.36</vBC>
+          <vICMS>2520.41</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>35348.66</vBCST>
+          <vST>3842.34</vST>
+          <vFCPST>706.98</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>21003.36</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>304.97</vPIS>
+          <vCOFINS>1404.70</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>25552.68</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>13041121000123</CNPJ>
+          <xNome>VEITONIS &amp; T . DO AMARAL TRANSP LTDA EPP</xNome>
+          <IE>272021042118</IE>
+          <xEnder>ATILIO GARDEZANI, 240</xEnder>
+          <xMun>CORDEIROPOLIS</xMun>
+          <UF>SP</UF>
+        </transporta>
+        <vol>
+          <qVol>360</qVol>
+          <esp>Caixa(s)</esp>
+          <marca>DELTA</marca>
+          <pesoL>13321.260</pesoL>
+          <pesoB>13640.230</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>1005387</nFat>
+          <vOrig>25552.68</vOrig>
+          <vDesc>0.00</vDesc>
+          <vLiq>25552.68</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-08-29</dVenc>
+          <vDup>8750.00</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2020-09-28</dVenc>
+          <vDup>4200.67</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2020-10-28</dVenc>
+          <vDup>4200.67</vDup>
+        </dup>
+        <dup>
+          <nDup>004</nDup>
+          <dVenc>2020-11-27</dVenc>
+          <vDup>4200.67</vDup>
+        </dup>
+        <dup>
+          <nDup>005</nDup>
+          <dVenc>2020-12-27</dVenc>
+          <vDup>4200.67</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <tPag>14</tPag>
+          <vPag>25552.68</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>Valor FCP = R$ 706,98</infAdFisco>
+        <infCpl>IPI REDUZIDO A ZERO CONFORME DECRETO N. 8.950 DE 29/12/16.; SUBSTITUICAO TRIBUTARIA CONFORME DECRETO 44950/2014 ICMS ST R$ 3842.34 - FECP = R$ 706.98 Seu Pedido: 098382/20B Placa: CUE-9046 / SP - Senha: 422</infCpl>
+      </infAdic>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe35200747595863000465550010010053871869024655">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>dZ8hbzPoSCVtDZ+F8cPqTbrxyEA=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>e+sEiNqwhM3iGiadfuiw+eLCcQIG8yihXGkpa+kjrVB8dXvKu1Up1zUcX9iwDqRwZ8+rh00NOnOvgRbo4M0PTJ7FnaN8xSXUvzyiRkoYZTJ96sTqqOnCPQXqNdnOevZUo60Hp31c2x726Ul99C6tXippJYe4qSnTIcS83D+u2GqGKwKmbI3wBPJu6ZTgxhqvwaAR4AozbEaZoS1enwGlwC+Ko2AZXiFXJMHnoLCjeygkMZSz7DTy8Ogl1cKfgl3Sopm86YhP+U5Xgq8ZDfMju6krbUC42h3nrA7PnUSfqExGfUw2QyD75EJ8ZujAg/0g4c9lID24BmHxdY/S5fyzng==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00">
+    <infProt Id="Id135200642873536">
+      <tpAmb>1</tpAmb>
+      <verAplic>SP_NFE_PL009_V4</verAplic>
+      <chNFe>35200747595863000465550010010053871869024655</chNFe>
+      <dhRecbto>2020-07-30T09:46:15-03:00</dhRecbto>
+      <nProt>135200642873536</nProt>
+      <digVal>dZ8hbzPoSCVtDZ+F8cPqTbrxyEA=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

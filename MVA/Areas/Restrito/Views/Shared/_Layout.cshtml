@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MVA</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"></button>
+
+            <a class="navbar-brand" href="/">MVA</a>
+
+
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        @Html.ActionLink("Escolher Operação", "Index", "Operacao", null, new { @class = "nav-link" })
+                    </li>
+                
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                           href="#" id="navbarDropdown"
+                           role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+
+                            Alíquota Por Empresa
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div>@Html.ActionLink("Visualizar Empresas", "Index", "Empresa", null, new { @class = "dropdown-item" })</div>
+                            <div>@Html.ActionLink("Cadastrar Empresa", "Cadastrar", "Empresa", null, new { @class = "dropdown-item" })</div>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item" style="color:#cacaca">
+                       Olá, @Session["nomeUsuarioLogado"] | &nbsp; <span id="sairStyle">@Html.ActionLink("Sair", "LogOff", "Logout")</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        <br />
+
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - MVA</p>
+            <p>Development by Rafael Medeiros - rafael.medeiros@belacap.com.br</p>
+            <b>bugs?</b> send message to rafael.medeiros@belacap.com.br
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

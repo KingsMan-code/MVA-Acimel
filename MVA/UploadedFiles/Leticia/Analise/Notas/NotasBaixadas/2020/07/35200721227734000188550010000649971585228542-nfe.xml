@@ -1,0 +1,230 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe35200721227734000188550010000649971585228542">
+      <ide>
+        <cUF>35</cUF>
+        <cNF>58522854</cNF>
+        <natOp>BONIFICACAO</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>64997</nNF>
+        <dhEmi>2020-07-15T00:00:00-03:00</dhEmi>
+        <dhSaiEnt>2020-07-15T00:00:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>3546702</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>2</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>4.0.0</verProc>
+      </ide>
+      <emit>
+        <CNPJ>21227734000188</CNPJ>
+        <xNome>NOVAPORCELANATO IND COM PORCELANATO LTDA</xNome>
+        <xFant>NOVAPORCELANATO</xFant>
+        <enderEmit>
+          <xLgr>ESTM JOSE HORACIO PASCON SGT 020</xLgr>
+          <nro>000</nro>
+          <xBairro>ZONA RURAL</xBairro>
+          <cMun>3546702</cMun>
+          <xMun>Santa Gertrudes</xMun>
+          <UF>SP</UF>
+          <CEP>13510000</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>1935458700</fone>
+        </enderEmit>
+        <IE>615017406114</IE>
+        <IEST>11135536</IEST>
+        <IM>4467</IM>
+        <CNAE>2342701</CNAE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONSTRUCOES LTDA</xNome>
+        <enderDest>
+          <xLgr>R CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xCpl>A 660</xCpl>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>Rio de Janeiro</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>Brasil</xPais>
+          <fone>2122012473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>nfe@acimel.com.br</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>DAR62097A</cProd>
+          <cEAN>7898660232762</cEAN>
+          <xProd>PORCELANATO CIMENTO GRIS AR62097 A</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <indEscala>S</indEscala>
+          <CFOP>6910</CFOP>
+          <uCom>M2</uCom>
+          <qCom>42.2400</qCom>
+          <vUnCom>21.2100000000</vUnCom>
+          <vProd>895.91</vProd>
+          <cEANTrib>7898660232762</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>42.2400</qTrib>
+          <vUnTrib>21.2100000000</vUnTrib>
+          <indTot>1</indTot>
+          <nFCI>FD0A1B07-3A29-42AC-A373-AE018B3ABB9F</nFCI>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>5</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>895.91</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>107.51</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.3000</pMVAST>
+              <vBCST>1507.82</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>163.90</vICMSST>
+              <vBCFCPST>1507.82</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>30.16</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISOutr>
+              <CST>49</CST>
+              <vBC>0.00</vBC>
+              <pPIS>0.0000</pPIS>
+              <vPIS>0.00</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>49</CST>
+              <vBC>0.00</vBC>
+              <pCOFINS>0.0000</pCOFINS>
+              <vCOFINS>0.00</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+        <infAdProd>BC.FCP R$ 1.507,82 x FCP 2% = R$ 30,16 / 62 x 62 - FD0A1B07-3A29-42AC-A373-AE018B3ABB9F - 7898660232762</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>895.91</vBC>
+          <vICMS>107.51</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>1507.82</vBCST>
+          <vST>163.90</vST>
+          <vFCPST>30.16</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>895.91</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>1089.97</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>13041121000123</CNPJ>
+          <xNome>VEITONIS &amp; TEIXEIRA DO AMARAL TRANSPORTES LTDA - EPP</xNome>
+          <IE>272021042118</IE>
+          <xEnder>R ATILIO GARDEZANI, 240</xEnder>
+          <xMun>Cordeiropolis</xMun>
+          <UF>SP</UF>
+        </transporta>
+        <vol>
+          <qVol>22</qVol>
+          <esp>Caixa(s)</esp>
+          <marca>DAMME</marca>
+          <pesoL>805.090</pesoL>
+          <pesoB>817.320</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>64997</nFat>
+          <vOrig>194.06</vOrig>
+          <vDesc>0.00</vDesc>
+          <vLiq>194.06</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-07-30</dVenc>
+          <vDup>194.06</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <tPag>14</tPag>
+          <vPag>194.06</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infAdFisco>Valor FCP = R$ 30,16</infAdFisco>
+        <infCpl>IPI - ALIQUOTA ZERO - DECRETO 8950/2016 MOTORISTA: MAIKON MELLO DI BATTISTA CIDADE: Cordeiropolis CPF: 26100039869 ST Protocolo ICMS 32/2014 - Industria Inscrita/RJ Venda FOB - O DESTINATARIO DA CARGA E O CONTRATANTE RESPONSAVEL PELO PAGAMENTO DO FRETE ST = R$ 163.90 / FECP = R$ 30.16 Placa: FYB-1665 / SP</infCpl>
+      </infAdic>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe35200721227734000188550010000649971585228542">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>cd3Ald9soSLDxg1UZJcPua0a+PQ=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>gdllO2ALvk5tddjMBNV45MlscLX/C+OH+pe3bkGOzizHYw5hTXzJjQz+HMs2nPjhWyLpBUsx3C4xLE+oNtINRylThSQ8IhBKN4wW93PvYuIBItj7bRtLAIFIXthKe+fOkA5Tx6bKQV4BPwqHAV7T4v/uuGQbh7GgA+hRjVNQWNoL01mZREguFAkDPvAZzi8h6CpxJ3Sz9Ku5poVfmKjQDWE1w6KEiW37evacfntEZSXB6md546oqi5R2BFBayb49NDYTz+vy/A++wJOVvitWY7tBIucLsdjaqoN4t5C69xl0cchykc6iV0dOkdZDNuiq6UXY9u6YP+qpRIkgvyW00g==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00">
+    <infProt Id="Id135200588251836">
+      <tpAmb>1</tpAmb>
+      <verAplic>SP_NFE_PL009_V4</verAplic>
+      <chNFe>35200721227734000188550010000649971585228542</chNFe>
+      <dhRecbto>2020-07-15T09:54:07-03:00</dhRecbto>
+      <nProt>135200588251836</nProt>
+      <digVal>cd3Ald9soSLDxg1UZJcPua0a+PQ=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

@@ -1,0 +1,1305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ProdutosAuditadosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="COFINS">
+          <Key>
+            <PropertyRef Name="IdCofins" />
+          </Key>
+          <Property Name="IdCofins" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CST" Type="int" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pCOFINS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vCOFINS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IdProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="IdEmpresa" />
+          </Key>
+          <Property Name="IdEmpresa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cnpj" Type="nvarchar" MaxLength="14" Nullable="false" />
+          <Property Name="Nome" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ICMS_00">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="modBC" Type="int" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_10">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="modBC" Type="int" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="modBCST" Type="int" />
+          <Property Name="pMVAST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pRedBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_20">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="modBC" Type="int" />
+          <Property Name="pRedBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="int" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_30">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="modBCST" Type="int" />
+          <Property Name="pMVAST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pRedBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="int" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_40">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="vICMSDeson" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="int" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_41">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="vICMSDeson" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="int" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_50">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="vICMSDeson" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="int" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_51">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="modBC" Type="int" />
+          <Property Name="pRedBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSOp" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pDif" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDif" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_60">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="vBCSTRet" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSSTRet" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_70">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="modBC" Type="int" />
+          <Property Name="pRedBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="modBCST" Type="int" />
+          <Property Name="pMVAST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pREDBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="int" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="ICMS_90">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orig" Type="int" />
+          <Property Name="CST" Type="int" />
+          <Property Name="modBC" Type="int" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pREDBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="modBCST" Type="int" />
+          <Property Name="pMVAST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pRedBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="int" />
+          <Property Name="IDProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="IPI">
+          <Key>
+            <PropertyRef Name="IdIpi" />
+          </Key>
+          <Property Name="IdIpi" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CST" Type="int" />
+          <Property Name="vBC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="pIPI" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vIPI" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IdProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="PIS">
+          <Key>
+            <PropertyRef Name="IdPis" />
+          </Key>
+          <Property Name="IdPis" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CST" Type="int" />
+          <Property Name="pPIS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="vPIS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="IdProduto" Type="int" />
+        </EntityType>
+        <EntityType Name="Produto">
+          <Key>
+            <PropertyRef Name="IdProduto" />
+          </Key>
+          <Property Name="IdProduto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoProduto" Type="nvarchar" MaxLength="40" />
+          <Property Name="Descricao" Type="nvarchar" MaxLength="300" />
+          <Property Name="Ean" Type="nvarchar" MaxLength="30" />
+          <Property Name="Ncm" Type="nvarchar" MaxLength="30" />
+          <Property Name="Cfop" Type="nvarchar" MaxLength="30" />
+          <Property Name="Cest" Type="nvarchar" MaxLength="30" />
+          <Property Name="DescricaodeNcmTipi" Type="nvarchar(max)" />
+          <Property Name="DescricaoCest" Type="nvarchar(max)" />
+          <Property Name="PaisDeRegistro" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fabricante" Type="nvarchar" MaxLength="150" />
+          <Property Name="Distribuidores" Type="nvarchar" MaxLength="150" />
+          <Property Name="Marca" Type="nvarchar" MaxLength="150" />
+          <Property Name="SegmentoMercadorias" Type="nvarchar" MaxLength="300" />
+          <Property Name="Imagem" Type="nvarchar" MaxLength="300" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="Observacoes" Type="nvarchar(max)" />
+          <Property Name="IdEmpresa" Type="int" Nullable="false" />
+          <Property Name="UnidadeComercial" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <Association Name="FK_COFINS_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="COFINS" Type="Self.COFINS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="COFINS">
+              <PropertyRef Name="IdProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS00_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_00" Type="Self.ICMS_00" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_00">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS10_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_10" Type="Self.ICMS_10" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_10">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS20_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_20" Type="Self.ICMS_20" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_20">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS30_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_30" Type="Self.ICMS_30" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_30">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS40_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_40" Type="Self.ICMS_40" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_40">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS41_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_41" Type="Self.ICMS_41" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_41">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS50_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_50" Type="Self.ICMS_50" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_50">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS51_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_51" Type="Self.ICMS_51" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_51">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS60_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_60" Type="Self.ICMS_60" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_60">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS70_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_70" Type="Self.ICMS_70" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_70">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS90_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="ICMS_90" Type="Self.ICMS_90" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_90">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IPI_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="IPI" Type="Self.IPI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="IPI">
+              <PropertyRef Name="IdProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PIS_Produto">
+          <End Role="Produto" Type="Self.Produto" Multiplicity="0..1" />
+          <End Role="PIS" Type="Self.PIS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="PIS">
+              <PropertyRef Name="IdProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Produtos_Empresa">
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="1" />
+          <End Role="Produto" Type="Self.Produto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="IdEmpresa" />
+            </Principal>
+            <Dependent Role="Produto">
+              <PropertyRef Name="IdEmpresa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ProdutosAuditadosModelStoreContainer">
+          <EntitySet Name="COFINS" EntityType="Self.COFINS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empresa" EntityType="Self.Empresa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_00" EntityType="Self.ICMS_00" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_10" EntityType="Self.ICMS_10" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_20" EntityType="Self.ICMS_20" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_30" EntityType="Self.ICMS_30" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_40" EntityType="Self.ICMS_40" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_41" EntityType="Self.ICMS_41" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_50" EntityType="Self.ICMS_50" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_51" EntityType="Self.ICMS_51" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_60" EntityType="Self.ICMS_60" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_70" EntityType="Self.ICMS_70" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ICMS_90" EntityType="Self.ICMS_90" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IPI" EntityType="Self.IPI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PIS" EntityType="Self.PIS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Produto" EntityType="Self.Produto" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_COFINS_Produto" Association="Self.FK_COFINS_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="COFINS" EntitySet="COFINS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS00_Produto" Association="Self.FK_ICMS00_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_00" EntitySet="ICMS_00" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS10_Produto" Association="Self.FK_ICMS10_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_10" EntitySet="ICMS_10" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS20_Produto" Association="Self.FK_ICMS20_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_20" EntitySet="ICMS_20" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS30_Produto" Association="Self.FK_ICMS30_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_30" EntitySet="ICMS_30" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS40_Produto" Association="Self.FK_ICMS40_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_40" EntitySet="ICMS_40" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS41_Produto" Association="Self.FK_ICMS41_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_41" EntitySet="ICMS_41" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS50_Produto" Association="Self.FK_ICMS50_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_50" EntitySet="ICMS_50" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS51_Produto" Association="Self.FK_ICMS51_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_51" EntitySet="ICMS_51" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS60_Produto" Association="Self.FK_ICMS60_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_60" EntitySet="ICMS_60" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS70_Produto" Association="Self.FK_ICMS70_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_70" EntitySet="ICMS_70" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS90_Produto" Association="Self.FK_ICMS90_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_90" EntitySet="ICMS_90" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IPI_Produto" Association="Self.FK_IPI_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="IPI" EntitySet="IPI" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PIS_Produto" Association="Self.FK_PIS_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="PIS" EntitySet="PIS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Produtos_Empresa" Association="Self.FK_Produtos_Empresa">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Produto" EntitySet="Produto" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProdutosAuditadosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="IdEmpresa" />
+          </Key>
+          <Property Name="IdEmpresa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cnpj" Type="String" MaxLength="14" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Produto" Relationship="Self.FK_Produtos_Empresa" FromRole="Empresa" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="Produto">
+          <Key>
+            <PropertyRef Name="IdProduto" />
+          </Key>
+          <Property Name="IdProduto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodigoProduto" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Descricao" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Ean" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Ncm" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Cfop" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Cest" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="DescricaodeNcmTipi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DescricaoCest" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PaisDeRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Fabricante" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Distribuidores" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Marca" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="SegmentoMercadorias" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Imagem" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Observacoes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IdEmpresa" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Empresa" Relationship="Self.FK_Produtos_Empresa" FromRole="Produto" ToRole="Empresa" />
+          <Property Name="UnidadeComercial" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="COFINS" Relationship="ProdutosAuditadosModel.FK_COFINS_Produto" FromRole="Produto" ToRole="COFINS" />
+          <NavigationProperty Name="ICMS_00" Relationship="ProdutosAuditadosModel.FK_ICMS00_Produto" FromRole="Produto" ToRole="ICMS_00" />
+          <NavigationProperty Name="ICMS_10" Relationship="ProdutosAuditadosModel.FK_ICMS10_Produto" FromRole="Produto" ToRole="ICMS_10" />
+          <NavigationProperty Name="ICMS_20" Relationship="ProdutosAuditadosModel.FK_ICMS20_Produto" FromRole="Produto" ToRole="ICMS_20" />
+          <NavigationProperty Name="ICMS_30" Relationship="ProdutosAuditadosModel.FK_ICMS30_Produto" FromRole="Produto" ToRole="ICMS_30" />
+          <NavigationProperty Name="ICMS_40" Relationship="ProdutosAuditadosModel.FK_ICMS40_Produto" FromRole="Produto" ToRole="ICMS_40" />
+          <NavigationProperty Name="ICMS_41" Relationship="ProdutosAuditadosModel.FK_ICMS41_Produto" FromRole="Produto" ToRole="ICMS_41" />
+          <NavigationProperty Name="ICMS_50" Relationship="ProdutosAuditadosModel.FK_ICMS50_Produto" FromRole="Produto" ToRole="ICMS_50" />
+          <NavigationProperty Name="ICMS_51" Relationship="ProdutosAuditadosModel.FK_ICMS51_Produto" FromRole="Produto" ToRole="ICMS_51" />
+          <NavigationProperty Name="ICMS_60" Relationship="ProdutosAuditadosModel.FK_ICMS60_Produto" FromRole="Produto" ToRole="ICMS_60" />
+          <NavigationProperty Name="ICMS_70" Relationship="ProdutosAuditadosModel.FK_ICMS70_Produto" FromRole="Produto" ToRole="ICMS_70" />
+          <NavigationProperty Name="ICMS_90" Relationship="ProdutosAuditadosModel.FK_ICMS90_Produto" FromRole="Produto" ToRole="ICMS_90" />
+          <NavigationProperty Name="IPI" Relationship="ProdutosAuditadosModel.FK_IPI_Produto" FromRole="Produto" ToRole="IPI" />
+          <NavigationProperty Name="PIS" Relationship="ProdutosAuditadosModel.FK_PIS_Produto" FromRole="Produto" ToRole="PIS" />
+        </EntityType>
+        <Association Name="FK_Produtos_Empresa">
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="1" />
+          <End Role="Produto" Type="Self.Produto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="IdEmpresa" />
+            </Principal>
+            <Dependent Role="Produto">
+              <PropertyRef Name="IdEmpresa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ProdutosAuditadosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Empresa" EntityType="Self.Empresa" />
+          <EntitySet Name="Produto" EntityType="Self.Produto" />
+          <AssociationSet Name="FK_Produtos_Empresa" Association="Self.FK_Produtos_Empresa">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Produto" EntitySet="Produto" />
+          </AssociationSet>
+          <EntitySet Name="COFINS" EntityType="ProdutosAuditadosModel.COFINS" />
+          <EntitySet Name="ICMS_00" EntityType="ProdutosAuditadosModel.ICMS_00" />
+          <EntitySet Name="ICMS_10" EntityType="ProdutosAuditadosModel.ICMS_10" />
+          <EntitySet Name="ICMS_20" EntityType="ProdutosAuditadosModel.ICMS_20" />
+          <EntitySet Name="ICMS_30" EntityType="ProdutosAuditadosModel.ICMS_30" />
+          <EntitySet Name="ICMS_40" EntityType="ProdutosAuditadosModel.ICMS_40" />
+          <EntitySet Name="ICMS_41" EntityType="ProdutosAuditadosModel.ICMS_41" />
+          <EntitySet Name="ICMS_50" EntityType="ProdutosAuditadosModel.ICMS_50" />
+          <EntitySet Name="ICMS_51" EntityType="ProdutosAuditadosModel.ICMS_51" />
+          <EntitySet Name="ICMS_60" EntityType="ProdutosAuditadosModel.ICMS_60" />
+          <EntitySet Name="ICMS_70" EntityType="ProdutosAuditadosModel.ICMS_70" />
+          <EntitySet Name="ICMS_90" EntityType="ProdutosAuditadosModel.ICMS_90" />
+          <EntitySet Name="IPI" EntityType="ProdutosAuditadosModel.IPI" />
+          <EntitySet Name="PIS" EntityType="ProdutosAuditadosModel.PIS" />
+          <AssociationSet Name="FK_COFINS_Produto" Association="ProdutosAuditadosModel.FK_COFINS_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="COFINS" EntitySet="COFINS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS00_Produto" Association="ProdutosAuditadosModel.FK_ICMS00_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_00" EntitySet="ICMS_00" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS10_Produto" Association="ProdutosAuditadosModel.FK_ICMS10_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_10" EntitySet="ICMS_10" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS20_Produto" Association="ProdutosAuditadosModel.FK_ICMS20_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_20" EntitySet="ICMS_20" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS30_Produto" Association="ProdutosAuditadosModel.FK_ICMS30_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_30" EntitySet="ICMS_30" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS40_Produto" Association="ProdutosAuditadosModel.FK_ICMS40_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_40" EntitySet="ICMS_40" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS41_Produto" Association="ProdutosAuditadosModel.FK_ICMS41_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_41" EntitySet="ICMS_41" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS50_Produto" Association="ProdutosAuditadosModel.FK_ICMS50_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_50" EntitySet="ICMS_50" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS51_Produto" Association="ProdutosAuditadosModel.FK_ICMS51_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_51" EntitySet="ICMS_51" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS60_Produto" Association="ProdutosAuditadosModel.FK_ICMS60_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_60" EntitySet="ICMS_60" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS70_Produto" Association="ProdutosAuditadosModel.FK_ICMS70_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_70" EntitySet="ICMS_70" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ICMS90_Produto" Association="ProdutosAuditadosModel.FK_ICMS90_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="ICMS_90" EntitySet="ICMS_90" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IPI_Produto" Association="ProdutosAuditadosModel.FK_IPI_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="IPI" EntitySet="IPI" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PIS_Produto" Association="ProdutosAuditadosModel.FK_PIS_Produto">
+            <End Role="Produto" EntitySet="Produto" />
+            <End Role="PIS" EntitySet="PIS" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="COFINS">
+          <Key>
+            <PropertyRef Name="IdCofins" />
+          </Key>
+          <Property Name="IdCofins" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pCOFINS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vCOFINS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IdProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_COFINS_Produto" FromRole="COFINS" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_00">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="modBC" Type="Int32" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS00_Produto" FromRole="ICMS_00" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_10">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="modBC" Type="Int32" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="modBCST" Type="Int32" />
+          <Property Name="pMVAST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pRedBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS10_Produto" FromRole="ICMS_10" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_20">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="modBC" Type="Int32" />
+          <Property Name="pRedBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="Int32" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS20_Produto" FromRole="ICMS_20" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_30">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="modBCST" Type="Int32" />
+          <Property Name="pMVAST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pRedBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="Int32" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS30_Produto" FromRole="ICMS_30" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_40">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="vICMSDeson" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="Int32" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS40_Produto" FromRole="ICMS_40" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_41">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="vICMSDeson" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="Int32" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS41_Produto" FromRole="ICMS_41" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_50">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="vICMSDeson" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="Int32" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS50_Produto" FromRole="ICMS_50" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_51">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="modBC" Type="Int32" />
+          <Property Name="pRedBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSOp" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pDif" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDif" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS51_Produto" FromRole="ICMS_51" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_60">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="vBCSTRet" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSSTRet" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS60_Produto" FromRole="ICMS_60" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_70">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="modBC" Type="Int32" />
+          <Property Name="pRedBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="modBCST" Type="Int32" />
+          <Property Name="pMVAST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pREDBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="Int32" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS70_Produto" FromRole="ICMS_70" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="ICMS_90">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orig" Type="Int32" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="modBC" Type="Int32" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pREDBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="modBCST" Type="Int32" />
+          <Property Name="pMVAST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pRedBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vBCST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSST" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vICMSDeson" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="motDesICMS" Type="Int32" />
+          <Property Name="IDProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_ICMS90_Produto" FromRole="ICMS_90" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="IPI">
+          <Key>
+            <PropertyRef Name="IdIpi" />
+          </Key>
+          <Property Name="IdIpi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="vBC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="pIPI" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vIPI" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IdProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_IPI_Produto" FromRole="IPI" ToRole="Produto" />
+        </EntityType>
+        <EntityType Name="PIS">
+          <Key>
+            <PropertyRef Name="IdPis" />
+          </Key>
+          <Property Name="IdPis" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CST" Type="Int32" />
+          <Property Name="pPIS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="vPIS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IdProduto" Type="Int32" />
+          <NavigationProperty Name="Produto" Relationship="ProdutosAuditadosModel.FK_PIS_Produto" FromRole="PIS" ToRole="Produto" />
+        </EntityType>
+        <Association Name="FK_COFINS_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.COFINS" Role="COFINS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="COFINS">
+              <PropertyRef Name="IdProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS00_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_00" Role="ICMS_00" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_00">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS10_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_10" Role="ICMS_10" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_10">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS20_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_20" Role="ICMS_20" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_20">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS30_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_30" Role="ICMS_30" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_30">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS40_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_40" Role="ICMS_40" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_40">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS41_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_41" Role="ICMS_41" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_41">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS50_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_50" Role="ICMS_50" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_50">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS51_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_51" Role="ICMS_51" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_51">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS60_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_60" Role="ICMS_60" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_60">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS70_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_70" Role="ICMS_70" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_70">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ICMS90_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.ICMS_90" Role="ICMS_90" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="ICMS_90">
+              <PropertyRef Name="IDProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IPI_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.IPI" Role="IPI" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="IPI">
+              <PropertyRef Name="IdProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PIS_Produto">
+          <End Type="ProdutosAuditadosModel.Produto" Role="Produto" Multiplicity="0..1" />
+          <End Type="ProdutosAuditadosModel.PIS" Role="PIS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Produto">
+              <PropertyRef Name="IdProduto" />
+            </Principal>
+            <Dependent Role="PIS">
+              <PropertyRef Name="IdProduto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ProdutosAuditadosModelStoreContainer" CdmEntityContainer="ProdutosAuditadosEntities">
+          <EntitySetMapping Name="Empresa">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.Empresa">
+              <MappingFragment StoreEntitySet="Empresa">
+                <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+                <ScalarProperty Name="Cnpj" ColumnName="Cnpj" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Produto">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.Produto">
+              <MappingFragment StoreEntitySet="Produto">
+                <ScalarProperty Name="UnidadeComercial" ColumnName="UnidadeComercial" />
+                <ScalarProperty Name="IdProduto" ColumnName="IdProduto" />
+                <ScalarProperty Name="CodigoProduto" ColumnName="CodigoProduto" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="Ean" ColumnName="Ean" />
+                <ScalarProperty Name="Ncm" ColumnName="Ncm" />
+                <ScalarProperty Name="Cfop" ColumnName="Cfop" />
+                <ScalarProperty Name="Cest" ColumnName="Cest" />
+                <ScalarProperty Name="DescricaodeNcmTipi" ColumnName="DescricaodeNcmTipi" />
+                <ScalarProperty Name="DescricaoCest" ColumnName="DescricaoCest" />
+                <ScalarProperty Name="PaisDeRegistro" ColumnName="PaisDeRegistro" />
+                <ScalarProperty Name="Fabricante" ColumnName="Fabricante" />
+                <ScalarProperty Name="Distribuidores" ColumnName="Distribuidores" />
+                <ScalarProperty Name="Marca" ColumnName="Marca" />
+                <ScalarProperty Name="SegmentoMercadorias" ColumnName="SegmentoMercadorias" />
+                <ScalarProperty Name="Imagem" ColumnName="Imagem" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Observacoes" ColumnName="Observacoes" />
+                <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="COFINS">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.COFINS">
+              <MappingFragment StoreEntitySet="COFINS">
+                <ScalarProperty Name="IdProduto" ColumnName="IdProduto" />
+                <ScalarProperty Name="vCOFINS" ColumnName="vCOFINS" />
+                <ScalarProperty Name="pCOFINS" ColumnName="pCOFINS" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="IdCofins" ColumnName="IdCofins" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_00">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_00">
+              <MappingFragment StoreEntitySet="ICMS_00">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="vICMS" ColumnName="vICMS" />
+                <ScalarProperty Name="pICMS" ColumnName="pICMS" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="modBC" ColumnName="modBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_10">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_10">
+              <MappingFragment StoreEntitySet="ICMS_10">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="vICMSST" ColumnName="vICMSST" />
+                <ScalarProperty Name="pICMSST" ColumnName="pICMSST" />
+                <ScalarProperty Name="vBCST" ColumnName="vBCST" />
+                <ScalarProperty Name="pRedBCST" ColumnName="pRedBCST" />
+                <ScalarProperty Name="pMVAST" ColumnName="pMVAST" />
+                <ScalarProperty Name="modBCST" ColumnName="modBCST" />
+                <ScalarProperty Name="vICMS" ColumnName="vICMS" />
+                <ScalarProperty Name="pICMS" ColumnName="pICMS" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="modBC" ColumnName="modBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_20">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_20">
+              <MappingFragment StoreEntitySet="ICMS_20">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="motDesICMS" ColumnName="motDesICMS" />
+                <ScalarProperty Name="vICMSDeson" ColumnName="vICMSDeson" />
+                <ScalarProperty Name="vICMS" ColumnName="vICMS" />
+                <ScalarProperty Name="pICMS" ColumnName="pICMS" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="pRedBC" ColumnName="pRedBC" />
+                <ScalarProperty Name="modBC" ColumnName="modBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_30">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_30">
+              <MappingFragment StoreEntitySet="ICMS_30">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="motDesICMS" ColumnName="motDesICMS" />
+                <ScalarProperty Name="vICMSDeson" ColumnName="vICMSDeson" />
+                <ScalarProperty Name="vICMSST" ColumnName="vICMSST" />
+                <ScalarProperty Name="pICMSST" ColumnName="pICMSST" />
+                <ScalarProperty Name="vBCST" ColumnName="vBCST" />
+                <ScalarProperty Name="pRedBCST" ColumnName="pRedBCST" />
+                <ScalarProperty Name="pMVAST" ColumnName="pMVAST" />
+                <ScalarProperty Name="modBCST" ColumnName="modBCST" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_40">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_40">
+              <MappingFragment StoreEntitySet="ICMS_40">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="motDesICMS" ColumnName="motDesICMS" />
+                <ScalarProperty Name="vICMSDeson" ColumnName="vICMSDeson" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_41">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_41">
+              <MappingFragment StoreEntitySet="ICMS_41">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="motDesICMS" ColumnName="motDesICMS" />
+                <ScalarProperty Name="vICMSDeson" ColumnName="vICMSDeson" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_50">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_50">
+              <MappingFragment StoreEntitySet="ICMS_50">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="motDesICMS" ColumnName="motDesICMS" />
+                <ScalarProperty Name="vICMSDeson" ColumnName="vICMSDeson" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_51">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_51">
+              <MappingFragment StoreEntitySet="ICMS_51">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="vICMS" ColumnName="vICMS" />
+                <ScalarProperty Name="vICMSDif" ColumnName="vICMSDif" />
+                <ScalarProperty Name="pDif" ColumnName="pDif" />
+                <ScalarProperty Name="vICMSOp" ColumnName="vICMSOp" />
+                <ScalarProperty Name="pICMS" ColumnName="pICMS" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="pRedBC" ColumnName="pRedBC" />
+                <ScalarProperty Name="modBC" ColumnName="modBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_60">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_60">
+              <MappingFragment StoreEntitySet="ICMS_60">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="vICMSSTRet" ColumnName="vICMSSTRet" />
+                <ScalarProperty Name="vBCSTRet" ColumnName="vBCSTRet" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_70">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_70">
+              <MappingFragment StoreEntitySet="ICMS_70">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="motDesICMS" ColumnName="motDesICMS" />
+                <ScalarProperty Name="vICMSDeson" ColumnName="vICMSDeson" />
+                <ScalarProperty Name="vICMSST" ColumnName="vICMSST" />
+                <ScalarProperty Name="pICMSST" ColumnName="pICMSST" />
+                <ScalarProperty Name="vBCST" ColumnName="vBCST" />
+                <ScalarProperty Name="pREDBCST" ColumnName="pREDBCST" />
+                <ScalarProperty Name="pMVAST" ColumnName="pMVAST" />
+                <ScalarProperty Name="modBCST" ColumnName="modBCST" />
+                <ScalarProperty Name="vICMS" ColumnName="vICMS" />
+                <ScalarProperty Name="pICMS" ColumnName="pICMS" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="pRedBC" ColumnName="pRedBC" />
+                <ScalarProperty Name="modBC" ColumnName="modBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICMS_90">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.ICMS_90">
+              <MappingFragment StoreEntitySet="ICMS_90">
+                <ScalarProperty Name="IDProduto" ColumnName="IDProduto" />
+                <ScalarProperty Name="motDesICMS" ColumnName="motDesICMS" />
+                <ScalarProperty Name="vICMSDeson" ColumnName="vICMSDeson" />
+                <ScalarProperty Name="vICMSST" ColumnName="vICMSST" />
+                <ScalarProperty Name="pICMSST" ColumnName="pICMSST" />
+                <ScalarProperty Name="vBCST" ColumnName="vBCST" />
+                <ScalarProperty Name="pRedBCST" ColumnName="pRedBCST" />
+                <ScalarProperty Name="pMVAST" ColumnName="pMVAST" />
+                <ScalarProperty Name="modBCST" ColumnName="modBCST" />
+                <ScalarProperty Name="vICMS" ColumnName="vICMS" />
+                <ScalarProperty Name="pICMS" ColumnName="pICMS" />
+                <ScalarProperty Name="pREDBC" ColumnName="pREDBC" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="modBC" ColumnName="modBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="orig" ColumnName="orig" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IPI">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.IPI">
+              <MappingFragment StoreEntitySet="IPI">
+                <ScalarProperty Name="IdProduto" ColumnName="IdProduto" />
+                <ScalarProperty Name="vIPI" ColumnName="vIPI" />
+                <ScalarProperty Name="pIPI" ColumnName="pIPI" />
+                <ScalarProperty Name="vBC" ColumnName="vBC" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="IdIpi" ColumnName="IdIpi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PIS">
+            <EntityTypeMapping TypeName="ProdutosAuditadosModel.PIS">
+              <MappingFragment StoreEntitySet="PIS">
+                <ScalarProperty Name="IdProduto" ColumnName="IdProduto" />
+                <ScalarProperty Name="vPIS" ColumnName="vPIS" />
+                <ScalarProperty Name="pPIS" ColumnName="pPIS" />
+                <ScalarProperty Name="CST" ColumnName="CST" />
+                <ScalarProperty Name="IdPis" ColumnName="IdPis" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

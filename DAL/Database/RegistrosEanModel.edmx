@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RegistrosEanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CEST">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Item" Type="nvarchar" MaxLength="10" />
+          <Property Name="NumeroCest" Type="nvarchar" MaxLength="10" />
+          <Property Name="Ncm" Type="nvarchar" MaxLength="10" />
+          <Property Name="IdDoSegmento" Type="nvarchar" MaxLength="5" />
+          <Property Name="SegmentoMercadorias" Type="nvarchar" MaxLength="100" />
+          <Property Name="DescricaoCest" Type="nvarchar(max)" />
+          <Property Name="Utrib" Type="nvarchar" MaxLength="10" />
+          <Property Name="UtribDescricao" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RegistrosEAN.dbo.Classificacao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Classificacao">
+          <Key>
+            <PropertyRef Name="CODIGO" />
+          </Key>
+          <Property Name="CODIGO" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="NOME" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="IBPT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="NCM" Type="nvarchar" MaxLength="8" />
+          <Property Name="AliqNacional" Type="nvarchar" MaxLength="50" />
+          <Property Name="AliqInternacional" Type="nvarchar" MaxLength="50" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PRODUTOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOME" Type="nvarchar(max)" />
+          <Property Name="UNID" Type="nvarchar" MaxLength="6" />
+          <Property Name="EAN" Type="nvarchar" MaxLength="14" />
+          <Property Name="NCM" Type="nvarchar" MaxLength="8" />
+          <Property Name="FATOR" Type="varchar" MaxLength="15" />
+          <Property Name="DESCRICAO" Type="nvarchar(max)" />
+          <Property Name="ID_TIPOPROD" Type="varchar" MaxLength="20" />
+          <Property Name="ID_CLASSIFICACAO" Type="varchar" MaxLength="20" />
+          <Property Name="IMAGEM_URL" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="ProdutosDrogaria">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOME" Type="nvarchar" MaxLength="255" />
+          <Property Name="UNID" Type="nvarchar" MaxLength="255" />
+          <Property Name="EAN" Type="nvarchar" MaxLength="255" />
+          <Property Name="NCM" Type="nvarchar" MaxLength="255" />
+          <Property Name="FATOR" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID_CLASSIFICACAO" Type="nvarchar" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="TIPI">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ncm" Type="nvarchar" MaxLength="10" />
+          <Property Name="Descricao" Type="nvarchar(max)" />
+          <Property Name="Aliquota" Type="nvarchar" MaxLength="10" />
+          <Property Name="Ex1" Type="nvarchar(max)" />
+          <Property Name="Ex2" Type="nvarchar(max)" />
+          <Property Name="Ex3" Type="nvarchar(max)" />
+          <Property Name="Ex4" Type="nvarchar(max)" />
+          <Property Name="Ex5" Type="nvarchar(max)" />
+          <Property Name="Ex6" Type="nvarchar(max)" />
+          <Property Name="Ex7" Type="nvarchar(max)" />
+          <Property Name="Ex8" Type="nvarchar(max)" />
+          <Property Name="Ex9" Type="nvarchar(max)" />
+          <Property Name="Ex10" Type="nvarchar(max)" />
+          <Property Name="Ex11" Type="nvarchar(max)" />
+          <Property Name="Ex12" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="RegistrosEanModelStoreContainer">
+          <EntitySet Name="CEST" EntityType="Self.CEST" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IBPT" EntityType="Self.IBPT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRODUTOS" EntityType="Self.PRODUTOS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProdutosDrogaria" EntityType="Self.ProdutosDrogaria" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TIPI" EntityType="Self.TIPI" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Classificacao" EntityType="Self.Classificacao" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Classificacao].[CODIGO] AS [CODIGO], 
+    [Classificacao].[NOME] AS [NOME]
+    FROM [dbo].[Classificacao] AS [Classificacao]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RegistrosEanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CEST">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Item" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="NumeroCest" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Ncm" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="IdDoSegmento" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="SegmentoMercadorias" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DescricaoCest" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Utrib" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="UtribDescricao" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="IBPT">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="NCM" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="AliqNacional" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AliqInternacional" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="PRODUTOS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UNID" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="EAN" Type="String" MaxLength="14" FixedLength="false" Unicode="true" />
+          <Property Name="NCM" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FATOR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="DESCRICAO" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ID_TIPOPROD" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ID_CLASSIFICACAO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IMAGEM_URL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ProdutosDrogaria">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="UNID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EAN" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="NCM" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FATOR" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ID_CLASSIFICACAO" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TIPI">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ncm" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Descricao" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Aliquota" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Ex1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex6" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex7" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex8" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex9" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex10" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex11" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ex12" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Classificacao">
+          <Key>
+            <PropertyRef Name="CODIGO" />
+          </Key>
+          <Property Name="CODIGO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NOME" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="RegistrosEANEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CEST" EntityType="Self.CEST" />
+          <EntitySet Name="IBPT" EntityType="Self.IBPT" />
+          <EntitySet Name="PRODUTOS" EntityType="Self.PRODUTOS" />
+          <EntitySet Name="ProdutosDrogaria" EntityType="Self.ProdutosDrogaria" />
+          <EntitySet Name="TIPI" EntityType="Self.TIPI" />
+          <EntitySet Name="Classificacao" EntityType="Self.Classificacao" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RegistrosEanModelStoreContainer" CdmEntityContainer="RegistrosEANEntities">
+          <EntitySetMapping Name="CEST">
+            <EntityTypeMapping TypeName="RegistrosEanModel.CEST">
+              <MappingFragment StoreEntitySet="CEST">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Item" ColumnName="Item" />
+                <ScalarProperty Name="NumeroCest" ColumnName="NumeroCest" />
+                <ScalarProperty Name="Ncm" ColumnName="Ncm" />
+                <ScalarProperty Name="IdDoSegmento" ColumnName="IdDoSegmento" />
+                <ScalarProperty Name="SegmentoMercadorias" ColumnName="SegmentoMercadorias" />
+                <ScalarProperty Name="DescricaoCest" ColumnName="DescricaoCest" />
+                <ScalarProperty Name="Utrib" ColumnName="Utrib" />
+                <ScalarProperty Name="UtribDescricao" ColumnName="UtribDescricao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IBPT">
+            <EntityTypeMapping TypeName="RegistrosEanModel.IBPT">
+              <MappingFragment StoreEntitySet="IBPT">
+                <ScalarProperty Name="NCM" ColumnName="NCM" />
+                <ScalarProperty Name="AliqNacional" ColumnName="AliqNacional" />
+                <ScalarProperty Name="AliqInternacional" ColumnName="AliqInternacional" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUTOS">
+            <EntityTypeMapping TypeName="RegistrosEanModel.PRODUTOS">
+              <MappingFragment StoreEntitySet="PRODUTOS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NOME" ColumnName="NOME" />
+                <ScalarProperty Name="UNID" ColumnName="UNID" />
+                <ScalarProperty Name="EAN" ColumnName="EAN" />
+                <ScalarProperty Name="NCM" ColumnName="NCM" />
+                <ScalarProperty Name="FATOR" ColumnName="FATOR" />
+                <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+                <ScalarProperty Name="ID_TIPOPROD" ColumnName="ID_TIPOPROD" />
+                <ScalarProperty Name="ID_CLASSIFICACAO" ColumnName="ID_CLASSIFICACAO" />
+                <ScalarProperty Name="IMAGEM_URL" ColumnName="IMAGEM_URL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProdutosDrogaria">
+            <EntityTypeMapping TypeName="RegistrosEanModel.ProdutosDrogaria">
+              <MappingFragment StoreEntitySet="ProdutosDrogaria">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NOME" ColumnName="NOME" />
+                <ScalarProperty Name="UNID" ColumnName="UNID" />
+                <ScalarProperty Name="EAN" ColumnName="EAN" />
+                <ScalarProperty Name="NCM" ColumnName="NCM" />
+                <ScalarProperty Name="FATOR" ColumnName="FATOR" />
+                <ScalarProperty Name="ID_CLASSIFICACAO" ColumnName="ID_CLASSIFICACAO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TIPI">
+            <EntityTypeMapping TypeName="RegistrosEanModel.TIPI">
+              <MappingFragment StoreEntitySet="TIPI">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ncm" ColumnName="Ncm" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+                <ScalarProperty Name="Aliquota" ColumnName="Aliquota" />
+                <ScalarProperty Name="Ex1" ColumnName="Ex1" />
+                <ScalarProperty Name="Ex2" ColumnName="Ex2" />
+                <ScalarProperty Name="Ex3" ColumnName="Ex3" />
+                <ScalarProperty Name="Ex4" ColumnName="Ex4" />
+                <ScalarProperty Name="Ex5" ColumnName="Ex5" />
+                <ScalarProperty Name="Ex6" ColumnName="Ex6" />
+                <ScalarProperty Name="Ex7" ColumnName="Ex7" />
+                <ScalarProperty Name="Ex8" ColumnName="Ex8" />
+                <ScalarProperty Name="Ex9" ColumnName="Ex9" />
+                <ScalarProperty Name="Ex10" ColumnName="Ex10" />
+                <ScalarProperty Name="Ex11" ColumnName="Ex11" />
+                <ScalarProperty Name="Ex12" ColumnName="Ex12" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Classificacao">
+            <EntityTypeMapping TypeName="RegistrosEanModel.Classificacao">
+              <MappingFragment StoreEntitySet="Classificacao">
+                <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+                <ScalarProperty Name="NOME" ColumnName="NOME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

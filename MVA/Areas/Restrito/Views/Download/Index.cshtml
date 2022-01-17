@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Download das Notas";
+}
+
+<br />
+<br />
+
+<p>Quantidade de Notas Baixadas: @ViewBag.NotasBaixadas</p>
+<p>Quantidade de Notas Canceladas: @ViewBag.Canceladas</p>
+<p>Quantidade de Notas Não Baixadas: @ViewBag.NotasNaoEncontradas</p>
+
+<br />
+
+<div id="btn-top-exportar" class="panel-heading">
+    <a href="@Url.Action("Download")" class="btn btn-primary">Baixar Notas</a>
+</div>

@@ -1,0 +1,70 @@
+﻿@model DAL.Database.Acesso
+
+@{
+    /**/
+
+    ViewBag.Title = "Acesso de Usuário";
+}
+
+<style>
+
+    h2 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    td:first-child {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+
+    input[type=text] input[type=password] {
+        width: 200px;
+    }
+
+</style>
+
+
+
+<h2>Acesso de Usuário</h2>
+
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    // Cria a tag do formurlário
+    @Html.AntiForgeryToken() // previne o ataque CSRF
+    @Html.ValidationSummary(true)
+
+    if (ViewBag.Message != null)
+    {
+        <div style="border:1px solid red">
+            @ViewBag.Message
+        </div>
+    }
+
+    <div class="form-group">
+        @Html.Label("Usuário: ")
+        @Html.TextBoxFor(a => a.Usuario, "", new { @class = "form-control", placeholder = " Insira seu usuário" })
+        @Html.ValidationMessageFor(a => a.Usuario, "", new { style = "color: red;" })
+    </div>
+    <div class="form-group">
+        @Html.Label("Senha: ")
+        @Html.TextBoxFor(a => a.Senha, "", new { @class = "form-control", placeholder=" Insira sua senha", @type="password" })
+        @Html.ValidationMessageFor(a => a.Senha, "", new { style = "color: red;" })
+    </div>
+    <br />
+    <div class="form-group">
+        <input type="submit" value="Acessar" class="btn btn-primary" />
+    </div>
+
+
+    @section Scripts{
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+}

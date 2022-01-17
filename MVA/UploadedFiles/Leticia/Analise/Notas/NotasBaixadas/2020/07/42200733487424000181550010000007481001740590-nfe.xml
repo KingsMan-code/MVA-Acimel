@@ -1,0 +1,275 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe42200733487424000181550010000007481001740590">
+      <ide>
+        <cUF>42</cUF>
+        <cNF>00174059</cNF>
+        <natOp>VENDAS</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>748</nNF>
+        <dhEmi>2020-07-13T17:40:21-03:00</dhEmi>
+        <dhSaiEnt>2020-07-13T17:40:21-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>4204608</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>0</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>1</indPres>
+        <procEmi>0</procEmi>
+        <verProc>3.2.887.100</verProc>
+      </ide>
+      <emit>
+        <CNPJ>33487424000181</CNPJ>
+        <xNome>DUEFRATELLI CERAMICA LTDA</xNome>
+        <xFant>DUEFRATELLI CERAMICA</xFant>
+        <enderEmit>
+          <xLgr>AVENIDA DOS IMIGRANTES</xLgr>
+          <nro>1340</nro>
+          <xCpl>SALA 66</xCpl>
+          <xBairro>RIO MAINA</xBairro>
+          <cMun>4204608</cMun>
+          <xMun>CRICIUMA</xMun>
+          <UF>SC</UF>
+          <CEP>88817600</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>4821022747</fone>
+        </enderEmit>
+        <IE>260063002</IE>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONSTRUCOES LTDA</xNome>
+        <enderDest>
+          <xLgr>R CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xCpl>A 660</xCpl>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2127962144</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>belacap@belacap.com.br;compras@acimel.com.br</email>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>410</cProd>
+          <cEAN>7898415452704</cEAN>
+          <xProd>REVEST AZUL PISCINA LISO 20X20CM EXTRA CX1,72</xProd>
+          <NCM>69072200</NCM>
+          <CEST>1003000</CEST>
+          <CFOP>6101</CFOP>
+          <uCom>M2</uCom>
+          <qCom>550.4000</qCom>
+          <vUnCom>16.0700000000</vUnCom>
+          <vProd>8844.93</vProd>
+          <cEANTrib>7898415452704</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>550.4000</qTrib>
+          <vUnTrib>16.0700000000</vUnTrib>
+          <indTot>1</indTot>
+          <nItemPed>2</nItemPed>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>8844.93</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>1061.39</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>8844.93</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>145.94</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>8844.93</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>672.21</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>560</cProd>
+          <cEAN>7898415452643</cEAN>
+          <xProd>REVEST BRANCO LISO 20X20CM EXTRA CX 1,72</xProd>
+          <NCM>69072200</NCM>
+          <CEST>1003000</CEST>
+          <CFOP>6101</CFOP>
+          <uCom>M2</uCom>
+          <qCom>550.4000</qCom>
+          <vUnCom>14.3800000000</vUnCom>
+          <vProd>7914.75</vProd>
+          <cEANTrib>7898415452643</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>550.4000</qTrib>
+          <vUnTrib>14.3800000000</vUnTrib>
+          <indTot>1</indTot>
+          <nItemPed>1</nItemPed>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <modBC>3</modBC>
+              <vBC>7914.75</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>949.77</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>7914.75</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>130.59</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>7914.75</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>601.52</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>16759.68</vBC>
+          <vICMS>2011.16</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vFCPST>0.00</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>16759.68</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>276.53</vPIS>
+          <vCOFINS>1273.73</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>16759.68</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>14168518000143</CNPJ>
+          <xNome>CRISTIANO DA SILVA BITENCOURT ME</xNome>
+          <IE>256498423</IE>
+          <xEnder>RUA GUSTAVO GARCIA, SN</xEnder>
+          <xMun>JAGUARUNA</xMun>
+          <UF>SC</UF>
+        </transporta>
+        <vol>
+          <qVol>640</qVol>
+          <esp>CAIXAS</esp>
+          <pesoB>13627.904</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>748</nFat>
+          <vOrig>16759.68</vOrig>
+          <vDesc>0.00</vDesc>
+          <vLiq>16759.68</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-08-03</dVenc>
+          <vDup>16759.68</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <tPag>90</tPag>
+          <vPag>0.00</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infCpl>MANDAR JUNTO COM O PEDIDO 4619 DA PIERINI;IPI "0" CFE. DECRETO N 7.032 DE 14/12/2009.;AS PARCELAS REFERENTE AS ESTA NFE SOMENTE SERAO QUITADAS, ATRAVEZ DO PAGAMENTO DO BOLETO BANCARIO OU DEPOSITO BANCARIO.;"EVENTUAIS ATRASOS NA ENTREGA OU QUEBRA DE PRODUTOS PROVENIENTES DO TRANSPORTADOR TERCEIRIZADO CONTRATADO PELO CLIENTE NAO SERAO DE RESPONSABILIDADE DA DUEFRATELLI CERAMICA." VAL APROX DOS TRIBUTOS R$ 703,89 (4,20%) FONTE:IBPT</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>01043658000143</CNPJ>
+        <xContato>LORECI BORGES PEREIRA</xContato>
+        <email>loreci@lmsistemas.com.br</email>
+        <fone>4834376569</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe42200733487424000181550010000007481001740590">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>lpBwAfVpujCfigc551uoEQmfbt0=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>KuhoXDASoR8MdwBIiNNZ9jfiUFTrtr5SR2AXXg6yYlCpsgIh0JgHLph4s7zSZosnAYBrlSvrYtl3NExPQ+ODueM9Z4WNg+R5Kxjy21WcC4wrFlxDPTVvDhKvM3ioBDy4USDUl6+S5lqSAmTuTakR5g9m5QHr8f8c3Q5oD18dUVozwFpF+odhKNm+hW7dDG2WxITbBrZ+zueC6UlxiAdizsLTmU0uBpxh5sxk7BGqySDq8yGShAhYcNvw34BahfppEk8c1pUuR71ujm0XcheoA3cYLih5wpUOH1Czn+Ly5BD3ENrxgBK7mlttKXlbcDbDHYpFMPQCv4NRmAtpbc1D4g==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>MIIIBTCCBe2gAwIBAgIIDRfIrDJEO7QwDQYJKoZIhvcNAQELBQAwdTELMAkGA1UEBhMCQlIxEzARBgNVBAoMCklDUC1CcmFzaWwxNjA0BgNVBAsMLVNlY3JldGFyaWEgZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEZMBcGA1UEAwwQQUMgU0VSQVNBIFJGQiB2NTAeFw0yMDA1MTIxOTQzMDBaFw0yMTA1MTIxOTQzMDBaMIIBKjELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlNDMREwDwYDVQQHDAhDUklDSVVNQTETMBEGA1UECgwKSUNQLUJyYXNpbDEYMBYGA1UECwwPMDAwMDAxMDA5NjE3MjI0MTYwNAYDVQQLDC1TZWNyZXRhcmlhIGRhIFJlY2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsMDVJGQiBlLUNOUEogQTExGTAXBgNVBAsMEEFDIFNFUkFTQSBSRkIgdjUxFzAVBgNVBAsMDjAwMTAwOTk3MDAwMTUxMRUwEwYDVQQLDAxBUiBKT0lOVklMTEUxMTAvBgNVBAMMKERVRUZSQVRFTExJIENFUkFNSUNBIExUREE6MzM0ODc0MjQwMDAxODEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQD1s4sQBgqpYiuwv+sbqTr+m1ywJKYokR6WPdDmnJTXzRavcvQWbYLgqrD7ymkSF/7B+qWGCTwscGA2QEk6BU2jwDfWnN8iiu0MO1e+XEYSwh/xf7+mN73x6V/yN2moBrbu3MA/z1ovYv2o/uR81fV9OlqvSjep1HcqVISB+66J5+9k4RnK85ipUZaWOsmo6WcHxRu+BIJqAYbtEo9K1dKLLp4odCXVG8m4fTbqwCgamO4e4DGWHb8u0No6hrqhn0XDR/zNCLV4VzjtY9jnLBAsgXRkA1kuMRw1adRKOvjQH+4sTkZvrl8FT6Uux6IzchA1uFuSBzhfn69sPG8jb96PAgMBAAGjggLgMIIC3DAJBgNVHRMEAjAAMB8GA1UdIwQYMBaAFOzxQVFXqOY66V6zoCL5CIq1OoePMIGZBggrBgEFBQcBAQSBjDCBiTBIBggrBgEFBQcwAoY8aHR0cDovL3d3dy5jZXJ0aWZpY2Fkb2RpZ2l0YWwuY29tLmJyL2NhZGVpYXMvc2VyYXNhcmZidjUucDdiMD0GCCsGAQUFBzABhjFodHRwOi8vb2NzcC5jZXJ0aWZpY2Fkb2RpZ2l0YWwuY29tLmJyL3NlcmFzYXJmYnY1MIGwBgNVHREEgagwgaWBGU1BUkNFTE8uUElFUklOSUBHTUFJTC5DT02gGgYFYEwBAwKgERMPRVNURVZBTyBQSUVSSU5JoBkGBWBMAQMDoBATDjMzNDg3NDI0MDAwMTgxoDgGBWBMAQMEoC8TLTIwMDcxOTU1MjUxOTk2MTc5MTUxMDkzNzI3MTQ1MTAwMDAwMDAwMDAwMDAwMKAXBgVgTAEDB6AOEwwwMDAwMDAwMDAwMDAwcQYDVR0gBGowaDBmBgZgTAECAQ0wXDBaBggrBgEFBQcCARZOaHR0cDovL3B1YmxpY2FjYW8uY2VydGlmaWNhZG9kaWdpdGFsLmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvZGVjbGFyYWNhby1yZmIucGRmMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBnQYDVR0fBIGVMIGSMEqgSKBGhkRodHRwOi8vd3d3LmNlcnRpZmljYWRvZGlnaXRhbC5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL3NlcmFzYXJmYnY1LmNybDBEoEKgQIY+aHR0cDovL2xjci5jZXJ0aWZpY2Fkb3MuY29tLmJyL3JlcG9zaXRvcmlvL2xjci9zZXJhc2FyZmJ2NS5jcmwwHQYDVR0OBBYEFOXWFWjXskdIfad/h0TcDF9djOS8MA4GA1UdDwEB/wQEAwIF4DANBgkqhkiG9w0BAQsFAAOCAgEAOmK3V7Iodm9wkQVXHug2mAkf9l0S7ro6jhLma9FTust46DKzLXcLPWW4M/I2/FIJ12ty7+nU7ZUJw/Z5U7Iw0Tq+KS+mu/e2pe0vui1nA7LRtMDCSX0dtEBKiV02OiI7XLtrcrqs8M4hXeDNAngesQDt2TGTTmk8gtuwWiIMrnwzhWl4lF9PV1pHKTqaDvM4hgR3LB7QRnHr+q4aImNUCLOcNJNWlUUVIk05LBVI5Tpf5yCRpLiDE/94leSA2WV5cKWMQFa1zPfgEGcVZ4hEl05W9J5yLXpUuelbYuBsIpc1lY8yUOG8jWlS1ArW/jTkI60bKSjh8MZqOPxcQSHHqzGGCJQ5LZiBuCgzsb5g38PX1qJrPNE6JnYtbIe+kAfIpeOye2ZzGFpLw7N5bzrBDFubNqNQ2Lz/CYeFM2hW0alOsgE/2krme+/fEuyo1lJptltsOtC7+Wy1bWpFRiSTPriWAA1QWDj4VYu2CN/K2gPLUmyqG5aMDSbaJkvXw/fQDQt5r3q+FhIh3aYL1j69uFCTl61zquUHeAs109DoYtRIxU9DTfSNAe7lsizcYezaADIQkLki2urOxjFzRsEJBuTBgTrrHFATJZjrjmjW6WrnD8S0anGMEQ+KbYAKFve12fZBCKc+hgxUCkxVhUjBbEm2YB1QfL1p2+NCv1NSR4E=</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202006041529</verAplic>
+      <chNFe>42200733487424000181550010000007481001740590</chNFe>
+      <dhRecbto>2020-07-13T17:41:17-03:00</dhRecbto>
+      <nProt>342200104036082</nProt>
+      <digVal>lpBwAfVpujCfigc551uoEQmfbt0=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

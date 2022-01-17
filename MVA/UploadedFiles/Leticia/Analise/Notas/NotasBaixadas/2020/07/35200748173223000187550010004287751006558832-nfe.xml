@@ -1,0 +1,307 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe35200748173223000187550010004287751006558832">
+      <ide>
+        <cUF>35</cUF>
+        <cNF>00655883</cNF>
+        <natOp>VENDA PROD. EST. EM OPER. SUJ. REG. S.T.</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>428775</nNF>
+        <dhEmi>2020-07-17T00:00:00-03:00</dhEmi>
+        <dhSaiEnt>2020-07-17T11:11:19-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>3543907</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>2</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>ACBrNFe</verProc>
+      </ide>
+      <emit>
+        <CNPJ>48173223000187</CNPJ>
+        <xNome>CERAMICA CRISTOFOLETTI LTDA.</xNome>
+        <xFant>CRISTOFOLETTI</xFant>
+        <enderEmit>
+          <xLgr>ACESSO VIA WASHINGTON LUIZ, KM 180</xLgr>
+          <nro>SEM NUMERO</nro>
+          <xBairro>BATOVI</xBairro>
+          <cMun>3543907</cMun>
+          <xMun>RIO CLARO</xMun>
+          <UF>SP</UF>
+          <CEP>13504800</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>1935222800</fone>
+        </enderEmit>
+        <IE>587035989119</IE>
+        <IEST>92026248</IEST>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONST LTDA</xNome>
+        <enderDest>
+          <xLgr>R CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xCpl>A 660</xCpl>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2122012473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>61015-1</cProd>
+          <cEAN>7898437793755</cEAN>
+          <xProd>PORCELANATO RETIFICADO HD ESMALTADO MONOQUEIMA REF.61015 EXTRA A</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>269.2800</qCom>
+          <vUnCom>21.9000000000</vUnCom>
+          <vProd>5897.23</vProd>
+          <cEANTrib>7898437793755</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>269.2800</qTrib>
+          <vUnTrib>21.9000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>5897.23</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>707.67</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>9022.76</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>916.43</vICMSST>
+              <vBCFCPST>9022.76</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>180.46</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>5897.23</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>97.30</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>5897.23</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>448.19</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>FCP = Base 9.022,76 Aliq. 2,00 Valor 180,46</infAdProd>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>61023-1</cProd>
+          <cEAN>7908114109905</cEAN>
+          <xProd>PORCELANATO RETIFICADO HD ESMALTADO MONOQUEIMA REF.61023 EXTRA A.</xProd>
+          <NCM>69072100</NCM>
+          <CEST>1003000</CEST>
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>269.2800</qCom>
+          <vUnCom>21.9000000000</vUnCom>
+          <vProd>5897.23</vProd>
+          <cEANTrib>7908114109905</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>269.2800</qTrib>
+          <vUnTrib>21.9000000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>5897.23</vBC>
+              <pICMS>12.0000</pICMS>
+              <vICMS>707.67</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>53.0000</pMVAST>
+              <vBCST>9022.76</vBCST>
+              <pICMSST>18.0000</pICMSST>
+              <vICMSST>916.43</vICMSST>
+              <vBCFCPST>9022.76</vBCFCPST>
+              <pFCPST>2.0000</pFCPST>
+              <vFCPST>180.46</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>5897.23</vBC>
+              <pPIS>1.6500</pPIS>
+              <vPIS>97.30</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>5897.23</vBC>
+              <pCOFINS>7.6000</pCOFINS>
+              <vCOFINS>448.19</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>FCP = Base 9.022,76 Aliq. 2,00 Valor 180,46</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>11794.46</vBC>
+          <vICMS>1415.34</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>18045.52</vBCST>
+          <vST>1832.86</vST>
+          <vFCPST>360.92</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>11794.46</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>194.61</vPIS>
+          <vCOFINS>896.38</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>13988.24</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>13041121000123</CNPJ>
+          <xNome>VEITONIS &amp; TEIXEIRA DO AMARAL TRANSPORTES LTDA -EPP</xNome>
+          <IE>272021042118</IE>
+          <xEnder>R.ATILIO GARDEZANI,240</xEnder>
+          <xMun>CORDEIROPOLIS</xMun>
+          <UF>SP</UF>
+        </transporta>
+        <vol>
+          <qVol>288</qVol>
+          <esp>CAIXAS</esp>
+          <marca>REALCE PORCELANATO</marca>
+          <nVol>538,56 M2</nVol>
+          <pesoL>10394.208</pesoL>
+          <pesoB>10483.598</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>428775</nFat>
+          <vOrig>13988.24</vOrig>
+          <vDesc>0.00</vDesc>
+          <vLiq>13988.24</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-09-15</dVenc>
+          <vDup>4556.24</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2020-10-15</dVenc>
+          <vDup>2358.00</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2020-11-14</dVenc>
+          <vDup>2358.00</vDup>
+        </dup>
+        <dup>
+          <nDup>004</nDup>
+          <dVenc>2020-12-14</dVenc>
+          <vDup>2358.00</vDup>
+        </dup>
+        <dup>
+          <nDup>005</nDup>
+          <dVenc>2021-01-13</dVenc>
+          <vDup>2358.00</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <tPag>15</tPag>
+          <vPag>13988.24</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infCpl>FRETE DE TERCEIRO A PAGAR. Conf. CONHECIMENTO;Transporte Rodoviario de Carga n. ;de 15/07/2020 Ordem Coleta Carga ;de.15/07/2020;COBRANCA BANCARIA;MOT. ALEXANDRE ANTO;IPI ALIQUOTA ZERO, DECRETO N 8950/2016;CONTRIBUINTE SUBSTITUTO TRIBUTARIO INTERESTADUAL, PROTOCOLO;ICMS 32/2014 E DECRETO 44950/2014 DO RJ.;Valor Total do FCP R$ 360,92</infCpl>
+      </infAdic>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe35200748173223000187550010004287751006558832">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>omRBRRQ0MAJ/AxQpIzaVzbH4WHs=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>Qeh+4El4bobytq58bt/Uolgv6nhvyiMDs+0zg9ddGcbpxJOcCcwu/Tw9cHSCDum2RGfpmYvlOJ3M+hW5cxhRbj9Yo9msSv5BqLMtYazAXTNhD1pJLIOHd0JlbZUdGikE4QfGZo0BkBtpv3WPUmAVTKGbzUA0vnnJgIR++6BQndG8MdGxziTlV7MGZGwwoFdcuDi8DwQpxCRfBWoxwOV6UwYZnWhEJMRPugQXIglXfJgGxCZZ7ebbPJp5yHAUSObeZQ/zUQmCFAk9Ne8vkccbV03DkupcqEdvxgg9sR/DNm4vm6jqhMS4OBU+PF2XsJgpRf+HcLCcQBxV9WqDI2ZZow==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00">
+    <infProt Id="Id135200597615132">
+      <tpAmb>1</tpAmb>
+      <verAplic>SP_NFE_PL009_V4</verAplic>
+      <chNFe>35200748173223000187550010004287751006558832</chNFe>
+      <dhRecbto>2020-07-17T11:15:27-03:00</dhRecbto>
+      <nProt>135200597615132</nProt>
+      <digVal>omRBRRQ0MAJ/AxQpIzaVzbH4WHs=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

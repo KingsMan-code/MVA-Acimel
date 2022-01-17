@@ -1,0 +1,436 @@
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe35200700585121000223550010002371431973010854">
+      <ide>
+        <cUF>35</cUF>
+        <cNF>97301085</cNF>
+        <natOp>VENDA PRODUCAO ESTAB.ST</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>237143</nNF>
+        <dhEmi>2020-07-08T00:00:00-03:00</dhEmi>
+        <dhSaiEnt>2020-07-08T12:24:00-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>2</idDest>
+        <cMunFG>3512407</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>4</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>9</indPres>
+        <procEmi>0</procEmi>
+        <verProc>3.0</verProc>
+      </ide>
+      <emit>
+        <CNPJ>00585121000223</CNPJ>
+        <xNome>KARINA PISOS E REVESTIMENTOS CERAMICOS LTDA</xNome>
+        <xFant>KARINA PISOS E REVESTIMENTOS CERAMICOS LTDA</xFant>
+        <enderEmit>
+          <xLgr>RODOVIA WASHINGTON LUIZ</xLgr>
+          <nro>S/N</nro>
+          <xCpl>KM 155,5    CX.POSTAL: 159</xCpl>
+          <xBairro>DIST.INDUSTRIAL</xBairro>
+          <cMun>3512407</cMun>
+          <xMun>CORDEIROPOLIS</xMun>
+          <UF>SP</UF>
+          <CEP>13490000</CEP>
+          <cPais>1058</cPais>
+          <xPais>Brasil</xPais>
+          <fone>1935569999</fone>
+        </enderEmit>
+        <IE>272011650110</IE>
+        <IEST>92013960</IEST>
+        <CRT>3</CRT>
+      </emit>
+      <dest>
+        <CNPJ>11380529000102</CNPJ>
+        <xNome>ACIMEL COMERCIO DE REVESTIMENTOS E CONSTRUCOES LTDA</xNome>
+        <enderDest>
+          <xLgr>RUA CACHAMBI</xLgr>
+          <nro>654</nro>
+          <xBairro>CACHAMBI</xBairro>
+          <cMun>3304557</cMun>
+          <xMun>RIO DE JANEIRO</xMun>
+          <UF>RJ</UF>
+          <CEP>20771632</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>2122012473</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>79011290</IE>
+        <email>nfe@acimel.com.br;sebastiao@acimel.com.br;</email>
+      </dest>
+      <autXML>
+        <CNPJ>09101011000132</CNPJ>
+      </autXML>
+      <det nItem="1">
+        <prod>
+          <cProd>20006R ROVERE CANELA</cProd>
+          <cEAN>7899588816010</cEAN>
+          <xProd>PISO CLASSE A 20X105 - RETIFICADO 20006 ROVERE CANELA RET HD - PISO CERAMICO ESMALTADO</xProd>
+          <NCM>69072200</NCM>
+          <cBenef />
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>252.9600</qCom>
+          <vUnCom>18.8999841872</vUnCom>
+          <vProd>4780.94</vProd>
+          <cEANTrib>7899588816010</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>252.9600</qTrib>
+          <vUnTrib>18.8999841872</vUnTrib>
+          <vDesc>143.43</vDesc>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>4637.51</vBC>
+              <pICMS>12.00</pICMS>
+              <vICMS>556.50</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.30</pMVAST>
+              <vBCST>7804.93</vBCST>
+              <pICMSST>18.00</pICMSST>
+              <vICMSST>848.38</vICMSST>
+              <vBCFCPST>7804.93</vBCFCPST>
+              <pFCPST>2.00</pFCPST>
+              <vFCPST>156.10</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>4637.51</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>76.52</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>4637.51</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>352.45</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>FECP: R$ 156.10</infAdProd>
+      </det>
+      <det nItem="2">
+        <prod>
+          <cProd>65001R CALACATA</cProd>
+          <cEAN>7899588815853</cEAN>
+          <xProd>PISO CLASSE A 60X105 - RETIFICADO REF 65001 CALACATA RET HD - PISO CERAMICO ESMALTADO</xProd>
+          <NCM>69072200</NCM>
+          <cBenef />
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>182.4000</qCom>
+          <vUnCom>19.8000000000</vUnCom>
+          <vProd>3611.52</vProd>
+          <cEANTrib>7899588815853</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>182.4000</qTrib>
+          <vUnTrib>19.8000000000</vUnTrib>
+          <vDesc>108.35</vDesc>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>3503.17</vBC>
+              <pICMS>12.00</pICMS>
+              <vICMS>420.38</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.30</pMVAST>
+              <vBCST>5895.84</vBCST>
+              <pICMSST>18.00</pICMSST>
+              <vICMSST>640.87</vICMSST>
+              <vBCFCPST>5895.84</vBCFCPST>
+              <pFCPST>2.00</pFCPST>
+              <vFCPST>117.92</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>3503.17</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>57.80</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>3503.17</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>266.24</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>FECP: R$ 117.92</infAdProd>
+      </det>
+      <det nItem="3">
+        <prod>
+          <cProd>65003R URBAN</cProd>
+          <cEAN>7899588815891</cEAN>
+          <xProd>PISO CLASSE A 60X105 - RETIFICADO REF 65003 URBAN RET HD - PISO CERAMICO ESMALTADO</xProd>
+          <NCM>69072200</NCM>
+          <cBenef />
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>243.2000</qCom>
+          <vUnCom>19.8000000000</vUnCom>
+          <vProd>4815.36</vProd>
+          <cEANTrib>7899588815891</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>243.2000</qTrib>
+          <vUnTrib>19.8000000000</vUnTrib>
+          <vDesc>144.46</vDesc>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>4670.90</vBC>
+              <pICMS>12.00</pICMS>
+              <vICMS>560.51</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.30</pMVAST>
+              <vBCST>7861.12</vBCST>
+              <pICMSST>18.00</pICMSST>
+              <vICMSST>854.49</vICMSST>
+              <vBCFCPST>7861.12</vBCFCPST>
+              <pFCPST>2.00</pFCPST>
+              <vFCPST>157.22</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>4670.90</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>77.07</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>4670.90</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>354.99</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>FECP: R$ 157.22</infAdProd>
+      </det>
+      <det nItem="4">
+        <prod>
+          <cProd>65002R THASSOS</cProd>
+          <cEAN>7899588815877</cEAN>
+          <xProd>PISO CLASSE A 60X105 - RETIFICADO REF 65002 THASSOS RET HD - PISO CERAMICO ESMALTADO</xProd>
+          <NCM>69072200</NCM>
+          <cBenef />
+          <CFOP>6401</CFOP>
+          <uCom>M2</uCom>
+          <qCom>60.8000</qCom>
+          <vUnCom>19.8000000000</vUnCom>
+          <vProd>1203.84</vProd>
+          <cEANTrib>7899588815877</cEANTrib>
+          <uTrib>M2</uTrib>
+          <qTrib>60.8000</qTrib>
+          <vUnTrib>19.8000000000</vUnTrib>
+          <vDesc>36.11</vDesc>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS10>
+              <orig>0</orig>
+              <CST>10</CST>
+              <modBC>3</modBC>
+              <vBC>1167.73</vBC>
+              <pICMS>12.00</pICMS>
+              <vICMS>140.13</vICMS>
+              <modBCST>4</modBCST>
+              <pMVAST>68.30</pMVAST>
+              <vBCST>1965.29</vBCST>
+              <pICMSST>18.00</pICMSST>
+              <vICMSST>213.63</vICMSST>
+              <vBCFCPST>1965.29</vBCFCPST>
+              <pFCPST>2.00</pFCPST>
+              <vFCPST>39.31</vFCPST>
+            </ICMS10>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>51</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISAliq>
+              <CST>01</CST>
+              <vBC>1167.73</vBC>
+              <pPIS>1.65</pPIS>
+              <vPIS>19.27</vPIS>
+            </PISAliq>
+          </PIS>
+          <COFINS>
+            <COFINSAliq>
+              <CST>01</CST>
+              <vBC>1167.73</vBC>
+              <pCOFINS>7.60</pCOFINS>
+              <vCOFINS>88.75</vCOFINS>
+            </COFINSAliq>
+          </COFINS>
+        </imposto>
+        <infAdProd>FECP: R$ 39.31</infAdProd>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>13979.31</vBC>
+          <vICMS>1677.52</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>23527.18</vBCST>
+          <vST>2557.37</vST>
+          <vFCPST>470.55</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>14411.66</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>432.35</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>230.66</vPIS>
+          <vCOFINS>1062.43</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>17007.23</vNF>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>1</modFrete>
+        <transporta>
+          <CNPJ>18022248000119</CNPJ>
+          <xNome>RODOVIARIO VTA LTDA EPP ***VTA TRANSPORTES</xNome>
+          <IE>615014337117</IE>
+          <xEnder>RUA 08, 201</xEnder>
+          <xMun>SANTA GERTRUDES</xMun>
+          <UF>SP</UF>
+        </transporta>
+        <vol>
+          <qVol>460</qVol>
+          <esp>Caixa(s)</esp>
+          <marca>Karina Pisos</marca>
+          <nVol>460</nVol>
+          <pesoL>13964.000</pesoL>
+          <pesoB>14178.780</pesoB>
+        </vol>
+      </transp>
+      <cobr>
+        <fat>
+          <nFat>237143</nFat>
+          <vOrig>17007.23</vOrig>
+          <vDesc>0.00</vDesc>
+          <vLiq>17007.23</vLiq>
+        </fat>
+        <dup>
+          <nDup>001</nDup>
+          <dVenc>2020-09-02</dVenc>
+          <vDup>6522.75</vDup>
+        </dup>
+        <dup>
+          <nDup>002</nDup>
+          <dVenc>2020-09-30</dVenc>
+          <vDup>3494.83</vDup>
+        </dup>
+        <dup>
+          <nDup>003</nDup>
+          <dVenc>2020-10-28</dVenc>
+          <vDup>3494.83</vDup>
+        </dup>
+        <dup>
+          <nDup>004</nDup>
+          <dVenc>2020-11-25</dVenc>
+          <vDup>3494.82</vDup>
+        </dup>
+      </cobr>
+      <pag>
+        <detPag>
+          <tPag>14</tPag>
+          <vPag>17007.23</vPag>
+        </detPag>
+        <vTroco>0.00</vTroco>
+      </pag>
+      <infAdic>
+        <infAdFisco>(-) DESCONTO INCONDICIONAL: R$ 432.35</infAdFisco>
+        <infCpl>VALOR DE RECOLHIMENTO FECP - R$  470.55  NO PEDIDO 003621  IPI ALIQUOTA ZERO CONF. DECRETO NO 7.879 DE 27/12/2012  EMPRESA COM INSCRICAO SUBSTITUTO TRIBUTARIO NO ESTADO DO RIO DE JANEIRO  REPRES.: SAILE REPRESENTACOES LTDA</infCpl>
+      </infAdic>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+        <Reference URI="#NFe35200700585121000223550010002371431973010854">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+          <DigestValue>lIdeXV7E3p8FQnB0peJTJgpB8m4=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>6TirclcFW2zMjeIf+e6hrK7zqQT+13inhkrpnzb+/sYHJccScMb1/h4GfHkBpwGdbVkDsGyrSAkq/4tAtANuOHVMdkx3HvzQG/VnPkUgz46HbjE4PNl4zsbQe8XjKv5BOjhpSdi2E45LRlPpuuZFWyNuegJ5YkbFFLwkJ/97UzxNY8dwAn7E0a31cE7Q/oIjMtwVCyOX+yKLcA+e0yLx9W5mGpJFL5SeuRSgUgFd2htFOAbp+6wY89WYahrJpMSNxZB2R5LAho4+DYzCyHR8FRNrMQBM6UzbbFoFj/gguUoP2ZpxBV8fxkpaD7RfzDRgmz8/lgkMU7Sz+ubNNyW+bQ==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00">
+    <infProt Id="Id135200564156112">
+      <tpAmb>1</tpAmb>
+      <verAplic>SP_NFE_PL009_V4</verAplic>
+      <chNFe>35200700585121000223550010002371431973010854</chNFe>
+      <dhRecbto>2020-07-08T12:26:22-03:00</dhRecbto>
+      <nProt>135200564156112</nProt>
+      <digVal>lIdeXV7E3p8FQnB0peJTJgpB8m4=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>
